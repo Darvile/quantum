@@ -61,15 +61,16 @@ html[xmlns] .clearfix {
 
 // Menu active
 .active {
-  // &:first-letter {
-  //   color: $brand-default;
-  // }
+  position: relative;
   
   &:after {
     background-color: $brand-tertiary;
     content: '';
-    height: 1px;
-    width: 30px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    width: 66px;
+    left: 44px;
     display: block;
   }
 }

@@ -1,7 +1,10 @@
-// Framework grid generation
-//
-// Used only by Bootstrap to generate the correct number of grid classes given
-// any value of `$grid-columns`.
+/*  ==========================================================================
+    >>> Framework grid generation
+    ==========================================================================
+
+    # Used only by Bootstrap to generate the correct number of grid classes given
+    # any value of `$grid-columns`. */
+    
 
 // [converter] This is defined recursively in LESS, but Sass supports real loops
 @mixin make-grid-columns($i: 1, $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}") {
@@ -36,31 +39,31 @@
       width: percentage(($index / $grid-columns));
     }
   }
-  @if ($type == push) and ($index > 0) {
-    .col-#{$class}-push-#{$index} {
-      left: percentage(($index / $grid-columns));
-    }
-  }
-  @if ($type == push) and ($index == 0) {
-    .col-#{$class}-push-0 {
-      left: auto;
-    }
-  }
-  @if ($type == pull) and ($index > 0) {
-    .col-#{$class}-pull-#{$index} {
-      right: percentage(($index / $grid-columns));
-    }
-  }
-  @if ($type == pull) and ($index == 0) {
-    .col-#{$class}-pull-0 {
-      right: auto;
-    }
-  }
-  @if ($type == offset) {
-    .col-#{$class}-offset-#{$index} {
-      margin-left: percentage(($index / $grid-columns));
-    }
-  }
+//  @if ($type == push) and ($index > 0) {
+//    .col-#{$class}-push-#{$index} {
+//      left: percentage(($index / $grid-columns));
+//    }
+//  }
+//  @if ($type == push) and ($index == 0) {
+//    .col-#{$class}-push-0 {
+//      left: auto;
+//    }
+//  }
+//  @if ($type == pull) and ($index > 0) {
+//    .col-#{$class}-pull-#{$index} {
+//      right: percentage(($index / $grid-columns));
+//    }
+//  }
+//  @if ($type == pull) and ($index == 0) {
+//    .col-#{$class}-pull-0 {
+//      right: auto;
+//    }
+//  }
+//  @if ($type == offset) {
+//    .col-#{$class}-offset-#{$index} {
+//      margin-left: percentage(($index / $grid-columns));
+//    }
+//  }
 }
 
 // [converter] This is defined recursively in LESS, but Sass supports real loops
