@@ -1,0 +1,60 @@
+@import "mixins";
+
+// ==========================================================================
+//      >>> Helper Classes
+//      ==========================================================================
+
+//      # Description
+
+
+// Full width
+.full-width {
+  width: 100%;
+}
+
+
+// Float
+.fl-left  { float: left;  }
+.fl-right { float: right; }
+.fl-none  { float: none;  }
+
+// Clearfix
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+   display: inline-block;
+}
+
+html[xmlns] .clearfix {
+   display: block;
+}
+
+* html .clearfix {
+   height: 1%;
+}
+
+.hide { display: none; }
+
+.visible { display: block !important }
+
+// Lists
+.list-syle-none li { list-style: none; }
+
+// Centralize
+.center-block {
+   float: none;
+   margin-left: auto !important;
+   margin-right: auto !important;
+}
+
+
+// Display
+.block { display: block; }
+

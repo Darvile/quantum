@@ -1,0 +1,27 @@
+@import "../mixins";
+
+ // ==========================================================================
+ //    >>> Icons
+ //    ==========================================================================
+
+ //    # The icon call is at font-face.scss
+
+
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  margin-right: 5px;
+
+  &:before {
+    font-family: 'icomoon';
+  }
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
