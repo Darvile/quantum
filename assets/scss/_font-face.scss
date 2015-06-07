@@ -2,10 +2,11 @@
  //    >>> Font-face
  //    ==========================================================================
 
- //    # Icons 
+
+ // Icomoon 
 
 @font-face {
-  font-family: 'icomoon';
+  font-family: 'Icomoon';
   src:url('../../assets/fonts/icomoon.eot?-u20h0i');
   src:url('../../assets/fonts/icomoon.eot?#iefix-u20h0i') format('embedded-opentype'),
   url('../../assets/fonts/icomoon.svg?-u20h0i#icomoon') format('svg'),
@@ -15,3 +16,19 @@
   font-style: normal;
 }
 
+
+
+// Proxima Nova Regular
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../../assets/fonts/proximanova-regular-webfont.eot');
+    src: url('../../assets/fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/proximanova-regular-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/proximanova-regular-webfont.woff') format('woff'),
+         url('../../assets/fonts/proximanova-regular-webfont.ttf') format('truetype'),
+         url('../../assets/fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

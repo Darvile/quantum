@@ -6,17 +6,21 @@
 
 
 // Tipography
-$font-family: 'Lato';
+$icomoon: 'Icomoon';
+$font-family: 'Proxima Nova';
 
 // Global
 $link-color: #6B6B6B;
 $text-color: #6B6B6B;
 
-$brand-default: #6B6B6B;
+$brand-default: #1ab2c7;
 $brand-default-dark: darken($brand-default, 9%);
 
 $brand-secondary: #3d3978;
 $brand-secondary-dark: darken($brand-secondary, 9%);
+
+$brand-tertiary: #d1cfcf;
+$brand-tertiary-dark: darken($brand-secondary, 9%);
 
 // Form
 $form-color: #A9A9AE;

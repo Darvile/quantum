@@ -1,7 +1,39 @@
 @import "mixins";
+@import "variables";
 
  // ==========================================================================
  //    >>> Head
  //    ==========================================================================
 
  //    # Header styles 
+
+
+// Menu
+
+.menu-list {
+	background-color: rgba(0, 0, 0, 0.89);
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: transform 0.4s 0s, box-shadow 0s 0.4s;
+
+	.menu-item {
+		a {
+			color: $brand-tertiary;
+			display: block;
+			font-size: 10rem;
+			font-weight: bold;
+			letter-spacing: 0.7rem;
+			padding: 10px 40px;
+			text-decoration: none;
+			width: 100%;
+
+			&:hover {
+				color: $brand-default;
+				background-color: #fff;
+			}
+		}
+	}
+}
