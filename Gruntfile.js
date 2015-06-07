@@ -19,7 +19,13 @@ module.exports = function( grunt ) {
 			js: {
 				files: 'assets/js/**/*',
 				tasks: [ 'uglify', 'jshint' ]
-			}
+			},
+			html: {
+	            files: ['index.html'],
+	            options: {
+	                livereload: true
+	            }
+	        }
 		},
 
 		sass: {
