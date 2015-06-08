@@ -490,9 +490,19 @@ ul {
   list-style: none; }
 
 .triangles-wrap {
+  margin-top: 80px;
   width: 1102px;
-  height: 1873px;
-  background-image: url("../img/iphone.png"); }
+  height: 678px;
+  background-image: url("../img/iphone-horiz.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  text-align: center; }
+  .triangles-wrap canvas {
+    width: 798px !important;
+    height: 448px !important;
+    margin-top: 113px !important;
+    text-align: center; }
 
 #toggle {
   color: #000;
