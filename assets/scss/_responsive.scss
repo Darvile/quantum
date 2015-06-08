@@ -14,13 +14,39 @@
 
 @media (min-width: $screen-sm-min) {
   
+  // Section comments
+
+	.triangles-wrap {
+		margin-top: 49px;
+  	height: 448px;
+
+		canvas {
+			width: 530px!important;
+		  height: 297px!important;
+		  margin-top: 73px!important;
+		}
+	}
 }
 
 
 // Desktop
 
 @media (min-width: $screen-md-min) {
- 
+
+	// Section comments
+
+ 	.triangles-wrap {
+	  margin-top: 100px;
+	  height: 518px;
+
+	  canvas {
+	  	width: 611px!important;
+		  height: 342px!important;
+		  margin-top: 85px!important;
+		  text-align: center;
+		  margin-left: -2px;
+		}
+	}
 }
 
 
@@ -28,4 +54,17 @@
 
 @media (min-width: $screen-lg-min) {
   
+  // Section comments
+
+  .triangles-wrap {
+	  margin-top: 100px;
+	  height: 570px;
+
+	  canvas {
+			width: 668px!important;
+  		height: 378px!important;
+  		margin-top: 94px!important;
+			text-align: center;
+		}
+	}
 }

@@ -25,3 +25,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+.icon-quote-open:before {
+  content: "\e600";
+}
+.icon-quote-close:before {
+  content: "\e601";
+}

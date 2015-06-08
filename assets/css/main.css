@@ -428,6 +428,12 @@ th {
   [class^="icon-"]:before, [class*=" icon-"]:before {
     font-family: 'icomoon'; }
 
+.icon-quote-open:before {
+  content: "\e600"; }
+
+.icon-quote-close:before {
+  content: "\e601"; }
+
 .full-width {
   width: 100%; }
 
@@ -486,23 +492,49 @@ html[xmlns] .clearfix {
     left: 44px;
     display: block; }
 
+body {
+  height: 2000px; }
+
 ul {
   list-style: none; }
 
 .triangles-wrap {
-  margin-top: 80px;
-  width: 1102px;
-  height: 678px;
+  margin: 30px auto;
+  width: 90%;
+  height: 132px;
   background-image: url("../img/iphone-horiz.png");
   background-repeat: no-repeat;
   width: 100%;
   background-position: center;
+  background-size: contain;
   text-align: center; }
   .triangles-wrap canvas {
-    width: 798px !important;
-    height: 448px !important;
-    margin-top: 113px !important;
+    margin-top: 22px;
+    width: 155px !important;
+    height: 86px !important;
     text-align: center; }
+
+#comments blockquote {
+  background-color: #1ab2c7;
+  box-shadow: 7px 10px 0px 0px #0D555F;
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 4rem;
+  padding: 87px 70px; }
+  #comments blockquote p {
+    margin-left: 84px; }
+  #comments blockquote footer {
+    color: rgba(0, 0, 0, 0.28);
+    font-size: 3rem;
+    margin-left: 85px;
+    margin-top: 30px; }
+  #comments blockquote strong {
+    color: #fff; }
+  #comments blockquote cite {
+    display: block;
+    font-style: normal; }
+
+.icon-quote-open, .icon-quote-close {
+  font-size: 6rem; }
 
 #toggle {
   color: #000;
@@ -676,5 +708,32 @@ button {
 
 /* Responsive
    ========================================================================== */
+@media (min-width: 768px) {
+  .triangles-wrap {
+    margin-top: 49px;
+    height: 448px; }
+    .triangles-wrap canvas {
+      width: 530px !important;
+      height: 297px !important;
+      margin-top: 73px !important; } }
+@media (min-width: 992px) {
+  .triangles-wrap {
+    margin-top: 100px;
+    height: 518px; }
+    .triangles-wrap canvas {
+      width: 611px !important;
+      height: 342px !important;
+      margin-top: 85px !important;
+      text-align: center;
+      margin-left: -2px; } }
+@media (min-width: 1100px) {
+  .triangles-wrap {
+    margin-top: 100px;
+    height: 570px; }
+    .triangles-wrap canvas {
+      width: 668px !important;
+      height: 378px !important;
+      margin-top: 94px !important;
+      text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */

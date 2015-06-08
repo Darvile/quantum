@@ -1,31 +1,72 @@
+@import "variables";
+
  // ==========================================================================
  //    >>> style.css
  //    ==========================================================================
 
  //    # Global Stiles 
 
+ body {
+ 	height: 2000px;
+ }
+
 ul {
 	list-style: none;
 }
 
-// Section iphone
+// Section comments
 
 .triangles-wrap {
-	margin-top: 80px;
-	width: 1102px;
-	height: 678px;
+	margin: 30px auto;
+	width: 90%;
+	height: 132px;
 	background-image: url('../img/iphone-horiz.png');
 	background-repeat: no-repeat;
 	width: 100%;
-  	background-position: center;
-  	text-align: center;
+	background-position: center;
+	background-size: contain;
+	text-align: center;
 
-  	canvas {
-  		width: 798px !important;
-  		height: 448px!important;
-  		margin-top: 113px!important;
-  		text-align: center;
-  	}
+	canvas {
+		margin-top: 22px;
+		width: 155px!important;
+  		height: 86px!important;
+		text-align: center;
+	}
+}
+
+#comments {
+	blockquote {
+		background-color: $brand-default;
+		box-shadow: 7px 10px 0px 0px #0D555F;
+		color: rgba(255, 255, 255, 0.56);
+		font-size: 4rem;
+		padding: 87px 70px;
+
+		p {
+			margin-left: 84px;
+		}
+
+		footer {
+			color: rgba(0, 0, 0, 0.28);
+			font-size: 3rem;
+			margin-left: 85px;
+			margin-top: 30px;
+		}
+
+		strong {
+			color: #fff;
+		}
+
+		cite {
+			display: block;
+			font-style: normal;
+		}
+	}
+}
+
+.icon-quote-open, .icon-quote-close {
+	font-size: 6rem;
 }
 
 
