@@ -16,6 +16,28 @@
   
   // Section comments
 
+  #comments {
+		blockquote {
+			font-size: 4rem;
+			padding: 57px 70px;
+
+			p {
+				margin-left: 84px;
+			}
+
+			footer {
+				color: rgba(0, 0, 0, 0.28);
+				font-size: 3rem;
+				margin-left: 85px;
+				margin-top: 30px;
+			}
+		}
+	}
+
+	.icon-quote-open, .icon-quote-close {
+		font-size: 3rem;
+	}
+
 	.triangles-wrap {
 		margin-top: 49px;
   	height: 448px;
@@ -26,6 +48,11 @@
 		  margin-top: 73px!important;
 		}
 	}
+
+	.icon-quote-open, .icon-quote-close {
+		font-size: 6rem;
+	}
+
 }
 
 
@@ -46,6 +73,13 @@
 		  text-align: center;
 		  margin-left: -2px;
 		}
+	}
+
+	// Section services
+
+	.services-block span {
+	  font-size: 15rem;
+	  margin-top: 95px;
 	}
 }
 

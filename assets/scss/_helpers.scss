@@ -75,3 +75,30 @@ html[xmlns] .clearfix {
   }
 }
 
+// Title
+
+
+.title {
+  text-align: center;
+  font-size: 10rem;
+  color: #000;
+  margin-top: 140px;
+
+  &:after {
+    content: '';
+    display: block;
+    height: 6px;
+    width: 100px;
+    background-color: #1AB2C7;
+    margin-left: 468px;
+  }
+}
+
+.main-text {
+  font-size: 3rem;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 80px;
+}
+
