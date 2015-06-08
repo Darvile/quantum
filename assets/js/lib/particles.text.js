@@ -1,30 +1,9 @@
-(function($) {
-    /**
-    * Apps main code documentation
-    * Description
-    * @constructor
-    * @param {type} parameter - description.
-    */
-
-    /**
-    * Menu animation effect
-    * Description
-    * @constructor
-    * @param {type} parameter - description.
-    */
-
-    $('#toggle').on('click', function () {
-    	var lines = $(this).find('.lines');
-    	$(lines).toggleClass('lines-after lines-before');
-    	$('#menu').toggleClass('open');
-    });
-
-    /**
-    * Particles Text
-    * Solution found in http://codepen.io/chapko/pen/IlvmJ
-    */
-
-    var canvas = document.getElementById('canvas');
+/**
+* Particles Text
+* Solution found in http://codepen.io/chapko/pen/IlvmJ
+*/
+function particlesText () {
+	var canvas = document.getElementById('canvas');
 	var context = canvas.getContext('2d');
 
 	var WIDTH = 1036;
@@ -194,6 +173,6 @@
 	        particles[i].fx = particles[i].fy = 0;
 	    }
 	}
+}
 
-
-} )( jQuery );
+particlesText();

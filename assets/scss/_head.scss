@@ -112,7 +112,8 @@
 			width: 100%;
 
 			&:hover {
-				background-color: #fff;
+				// background-color: #fff;
+				background-color: rgba(255, 255, 255, 0.15);
 				color: $brand-default;
 			}
 		}
@@ -144,6 +145,12 @@
   font-size: 3.8rem;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+#canvas {
+	margin-top: 200px;
+	width: 80%;
+  height: auto;
 }
 
 // ================================
@@ -189,7 +196,7 @@
 
  .menu-list {
  	margin-top: 31px;
- 	
+
 	.menu-item {
 		a {
 			font-size: 10rem;
@@ -215,5 +222,7 @@
 // Desktop - Large monitors
 
 @media (min-width: $screen-lg-min) {
-  
+  #canvas {
+		width: 1036px;
+	}
 }

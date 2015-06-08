@@ -76,6 +76,7 @@ module.exports = function( grunt ) {
 				files: {
 					'dist/js/main.min.js': [
 						'assets/js/lib/jquery-1.11.1.js',
+						'assets/js/lib/particles.text.js',
 						'assets/js/functions.js'
 					]
 				}
