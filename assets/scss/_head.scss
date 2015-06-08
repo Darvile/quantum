@@ -18,11 +18,11 @@
   text-decoration: none;
   padding: 0rem;
   pointer-events: auto;
-  position: absolute;
+  position: fixed;
   right: 1.5em;
   top: 10px;
   transition: color .4s;
-  z-index: 10;
+  z-index: 1010;
 
 
   > span {
@@ -89,11 +89,12 @@
 	background-color: rgba(0, 0, 0, 0.89);
 	bottom: 0;
 	left: 0;
-	position: absolute;
+	position: fixed;
 	right: 0;
 	top: 0;
 	transform: translateX(-100%);
 	transition: transform 0.4s 0s, box-shadow 0s 0.4s;
+	z-index: 1000;
 }
 
 .menu-list {
@@ -119,6 +120,8 @@
 		}
 	}
 }
+
+// Top Header
 
 .top-header {
 	color: #000;
@@ -168,10 +171,15 @@
 // Tablet
 
 @media (min-width: $screen-sm-min) {
+
+	// Menu
+
 	.menu-list {
 	  margin-top: 271px;
 	  text-align: center;
 	}
+
+	// Top Header
 
 	.top-header {
 		max-height: 903px;
@@ -192,6 +200,7 @@
 // Desktop
 
 @media (min-width: $screen-md-min) {
+
 	// Menu
 
  .menu-list {
