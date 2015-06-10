@@ -16,7 +16,22 @@
   
   // Section comments
 
-  #comments {
+  #linesWrapper {
+  	height: 100vh;
+	}
+
+	#comments {
+		height: 100vh;
+		// padding: 190px 0;
+		padding: 0;
+	  background-color: #F1F0F1;
+	  overflow: hidden;
+	  margin-top: -11px;
+
+		img {
+			width: 85%;
+		}
+
 		blockquote {
 			font-size: 4rem;
 			padding: 57px 70px;
@@ -40,7 +55,7 @@
 
 	.triangles-wrap {
 		margin-top: 49px;
-  	height: 448px;
+  		height: 448px;
 
 		canvas {
 			width: 530px!important;
@@ -92,12 +107,12 @@
 
   .triangles-wrap {
 	  margin-top: 100px;
-	  height: 570px;
+	  height: 520px;
 
 	  canvas {
-			width: 668px!important;
-  		height: 378px!important;
-  		margin-top: 94px!important;
+			width: 630px!important;
+		  height: 354px!important;
+		  margin-top: 84px!important;
 			text-align: center;
 		}
 	}

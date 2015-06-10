@@ -506,23 +506,33 @@ html[xmlns] .clearfix {
 
 .title {
   text-align: center;
-  font-size: 10rem;
-  color: #000;
-  margin-top: 140px; }
+  font-size: 64px;
+  color: #FFF;
+  width: 340px;
+  margin: 100px auto 0;
+  position: relative; }
   .title:after {
     content: '';
     display: block;
     height: 6px;
     width: 100px;
     background-color: #1AB2C7;
-    margin-left: 468px; }
+    position: absolute;
+    left: 0; }
 
 .main-text {
-  font-size: 3rem;
+  font-size: 20px;
   width: 75%;
   margin: 0 auto;
   text-align: center;
   margin-top: 80px; }
+
+.v-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
 
 body {
   height: 10000px; }
@@ -534,7 +544,7 @@ ul {
   margin: 30px auto;
   width: 90%;
   height: 132px;
-  background-image: url("../img/iphone-horiz.png");
+  background-image: url("../img/iphone-horiz1.png");
   background-repeat: no-repeat;
   width: 100%;
   background-position: center;
@@ -546,29 +556,33 @@ ul {
     height: 86px !important;
     text-align: center; }
 
-#comments blockquote {
-  background-color: #1ab2c7;
-  box-shadow: 7px 10px 0px 0px #0D555F;
-  color: rgba(255, 255, 255, 0.56);
+blockquote {
+  color: rgba(0, 0, 0, 0.56);
   font-size: 2.3rem;
   padding: 20px 20px; }
-  #comments blockquote p {
+  blockquote p {
     margin-left: 23px; }
-  #comments blockquote footer {
+  blockquote footer {
     color: rgba(0, 0, 0, 0.28);
     font-size: 2rem;
     margin-left: 22px;
     margin-top: 23px; }
-  #comments blockquote strong {
+  blockquote strong {
     color: #fff; }
-  #comments blockquote cite {
+  blockquote cite {
     display: block;
     font-style: normal; }
 
 .icon-quote-open, .icon-quote-close {
   font-size: 2rem; }
 
+#services {
+  background-color: #201F1F;
+  display: inline-block; }
+
 .services-block-wrap {
+  background-color: #fff;
+  overflow: hidden;
   margin-top: 100px;
   text-align: center; }
   .services-block-wrap > .col-md-3 {
@@ -615,7 +629,7 @@ ul {
   z-index: 2; }
 
 .side {
-  background: #000;
+  background: #201F1F;
   transform: rotateY(90deg);
   z-index: 1;
   left: 100%; }
@@ -629,6 +643,17 @@ ul {
 .cube-text {
   font-size: 2.5rem;
   text-transform: uppercase; }
+
+#comments {
+  height: 100vh; }
+
+.tablet-container {
+  height: 100%; }
+  .tablet-container img {
+    width: 90%; }
+
+.quote-wrapper {
+  height: 100%; }
 
 #toggle {
   color: #000;
@@ -803,16 +828,27 @@ button {
 /* Responsive
    ========================================================================== */
 @media (min-width: 768px) {
-  #comments blockquote {
-    font-size: 4rem;
-    padding: 57px 70px; }
-    #comments blockquote p {
-      margin-left: 84px; }
-    #comments blockquote footer {
-      color: rgba(0, 0, 0, 0.28);
-      font-size: 3rem;
-      margin-left: 85px;
-      margin-top: 30px; }
+  #linesWrapper {
+    height: 100vh; }
+
+  #comments {
+    height: 100vh;
+    padding: 0;
+    background-color: #F1F0F1;
+    overflow: hidden;
+    margin-top: -11px; }
+    #comments img {
+      width: 85%; }
+    #comments blockquote {
+      font-size: 4rem;
+      padding: 57px 70px; }
+      #comments blockquote p {
+        margin-left: 84px; }
+      #comments blockquote footer {
+        color: rgba(0, 0, 0, 0.28);
+        font-size: 3rem;
+        margin-left: 85px;
+        margin-top: 30px; }
 
   .icon-quote-open, .icon-quote-close {
     font-size: 3rem; }
@@ -844,11 +880,11 @@ button {
 @media (min-width: 1100px) {
   .triangles-wrap {
     margin-top: 100px;
-    height: 570px; }
+    height: 520px; }
     .triangles-wrap canvas {
-      width: 668px !important;
-      height: 378px !important;
-      margin-top: 94px !important;
+      width: 630px !important;
+      height: 354px !important;
+      margin-top: 84px !important;
       text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */
