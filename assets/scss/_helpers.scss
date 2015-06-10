@@ -80,9 +80,9 @@ html[xmlns] .clearfix {
 
 .title {
   text-align: center;
-  font-size: 64px;
+  font-size: 4rem;
   color: #FFF;
-  width: 340px;
+  width: 211px;
   margin: 100px auto 0;
   position: relative;
 
@@ -90,7 +90,7 @@ html[xmlns] .clearfix {
     content: '';
     display: block;
     height: 6px;
-    width: 100px;
+    width: 85px;
     background-color: #1AB2C7;
     position: absolute;
     left: 0;
@@ -99,8 +99,6 @@ html[xmlns] .clearfix {
 
 .main-text {
   font-size: 20px;
-  width: 75%;
-  margin: 0 auto;
   text-align: center;
   margin-top: 80px;
 }
@@ -109,5 +107,48 @@ html[xmlns] .clearfix {
 
 .v-center {
   @include vertical-align;
+}
+
+// Tablet
+
+@media (min-width: $screen-sm-min) {
+  
+
+
+}
+
+
+// Desktop
+
+@media (min-width: $screen-md-min) {
+  .title {
+    font-size: 5rem;
+    width: 262px;
+    margin: 100px auto 0;
+    
+
+    &:after {
+      height: 6px;
+      width: 100px;
+      left: 0;
+    }
+  }
+
+  .main-text {
+    font-size: 20px;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+}
+
+
+// Desktop - Large monitors
+
+@media (min-width: $screen-lg-min) {
+  
+  
 }
 

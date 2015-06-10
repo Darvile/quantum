@@ -506,24 +506,22 @@ html[xmlns] .clearfix {
 
 .title {
   text-align: center;
-  font-size: 64px;
+  font-size: 4rem;
   color: #FFF;
-  width: 340px;
+  width: 211px;
   margin: 100px auto 0;
   position: relative; }
   .title:after {
     content: '';
     display: block;
     height: 6px;
-    width: 100px;
+    width: 85px;
     background-color: #1AB2C7;
     position: absolute;
     left: 0; }
 
 .main-text {
   font-size: 20px;
-  width: 75%;
-  margin: 0 auto;
   text-align: center;
   margin-top: 80px; }
 
@@ -534,6 +532,22 @@ html[xmlns] .clearfix {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
+@media (min-width: 992px) {
+  .title {
+    font-size: 5rem;
+    width: 262px;
+    margin: 100px auto 0; }
+    .title:after {
+      height: 6px;
+      width: 100px;
+      left: 0; }
+
+  .main-text {
+    font-size: 20px;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px; } }
 body {
   height: 10000px; }
 
@@ -568,7 +582,7 @@ blockquote {
     margin-left: 22px;
     margin-top: 23px; }
   blockquote strong {
-    color: #fff; }
+    color: rgba(0, 0, 0, 0.7); }
   blockquote cite {
     display: block;
     font-style: normal; }
@@ -620,8 +634,7 @@ blockquote {
   backface-visibility: visible;
   transform-origin: 0 0; }
   .face span {
-    font-size: 13rem;
-    margin-top: 110px; }
+    font-size: 13rem; }
 
 .front {
   background: #F1F0F1;
@@ -635,8 +648,7 @@ blockquote {
   left: 100%; }
   .side span {
     color: #A4C439;
-    font-size: 13rem;
-    margin-top: 110px; }
+    font-size: 13rem; }
   .side .icon-apple {
     color: #fff; }
 
@@ -840,14 +852,15 @@ button {
     #comments img {
       width: 85%; }
     #comments blockquote {
-      font-size: 4rem;
+      font-size: 3.1rem;
       padding: 57px 70px; }
       #comments blockquote p {
-        margin-left: 84px; }
+        margin-left: 55px;
+        width: 490px; }
       #comments blockquote footer {
         color: rgba(0, 0, 0, 0.28);
-        font-size: 3rem;
-        margin-left: 85px;
+        font-size: 2.3rem;
+        margin-left: 58px;
         margin-top: 30px; }
 
   .icon-quote-open, .icon-quote-close {
@@ -862,7 +875,7 @@ button {
       margin-top: 73px !important; }
 
   .icon-quote-open, .icon-quote-close {
-    font-size: 6rem; } }
+    font-size: 4rem; } }
 @media (min-width: 992px) {
   .triangles-wrap {
     margin-top: 100px;
