@@ -83,13 +83,14 @@ html[xmlns] .clearfix {
   font-size: 4rem;
   color: #FFF;
   width: 211px;
+  margin: 40px auto 0;
   margin: 100px auto 0;
   position: relative;
 
   &:after {
     content: '';
     display: block;
-    height: 6px;
+    height: 3px;
     width: 85px;
     background-color: #1AB2C7;
     position: absolute;
@@ -98,10 +99,14 @@ html[xmlns] .clearfix {
 }
 
 .main-text {
-  font-size: 20px;
+  font-size: 2rem;
+  width: 323px;
+  margin: 53px auto;
+  line-height: 34px;
   text-align: center;
-  margin-top: 80px;
 }
+
+
 
 // Center content
 
@@ -113,7 +118,32 @@ html[xmlns] .clearfix {
 
 @media (min-width: $screen-sm-min) {
   
+  .title {
+    text-align: center;
+    font-size: 4rem;
+    color: #FFF;
+    width: 211px;
+    margin: 40px auto 0;
+    margin: 100px auto 0;
+    position: relative;
 
+    &:after {
+      content: '';
+      display: block;
+      height: 6px;
+      width: 85px;
+      background-color: #1AB2C7;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  .main-text {
+    font-size: 2rem;
+    text-align: center;
+    width: 680px;
+    margin: 80px auto;
+  }
 
 }
 
@@ -122,8 +152,8 @@ html[xmlns] .clearfix {
 
 @media (min-width: $screen-md-min) {
   .title {
-    font-size: 5rem;
-    width: 262px;
+    font-size: 10.8rem;
+    width: 566px;
     margin: 100px auto 0;
     
 
@@ -135,8 +165,8 @@ html[xmlns] .clearfix {
   }
 
   .main-text {
-    font-size: 20px;
-    width: 75%;
+    font-size: 2.9rem;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     margin-top: 80px;
@@ -148,7 +178,17 @@ html[xmlns] .clearfix {
 // Desktop - Large monitors
 
 @media (min-width: $screen-lg-min) {
-  
-  
+
+  .title {
+    font-size: 10rem;
+    width: 689px;
+    margin: 100px auto 0;
+
+    &:after {
+      height: 6px;
+      width: 100px;
+      left: 0;
+    }
+  }
 }
 

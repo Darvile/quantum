@@ -509,21 +509,24 @@ html[xmlns] .clearfix {
   font-size: 4rem;
   color: #FFF;
   width: 211px;
+  margin: 40px auto 0;
   margin: 100px auto 0;
   position: relative; }
   .title:after {
     content: '';
     display: block;
-    height: 6px;
+    height: 3px;
     width: 85px;
     background-color: #1AB2C7;
     position: absolute;
     left: 0; }
 
 .main-text {
-  font-size: 20px;
-  text-align: center;
-  margin-top: 80px; }
+  font-size: 2rem;
+  width: 323px;
+  margin: 53px auto;
+  line-height: 34px;
+  text-align: center; }
 
 .v-center {
   position: relative;
@@ -532,10 +535,33 @@ html[xmlns] .clearfix {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
+@media (min-width: 768px) {
+  .title {
+    text-align: center;
+    font-size: 4rem;
+    color: #FFF;
+    width: 211px;
+    margin: 40px auto 0;
+    margin: 100px auto 0;
+    position: relative; }
+    .title:after {
+      content: '';
+      display: block;
+      height: 6px;
+      width: 85px;
+      background-color: #1AB2C7;
+      position: absolute;
+      left: 0; }
+
+  .main-text {
+    font-size: 2rem;
+    text-align: center;
+    width: 680px;
+    margin: 80px auto; } }
 @media (min-width: 992px) {
   .title {
-    font-size: 5rem;
-    width: 262px;
+    font-size: 10.8rem;
+    width: 566px;
     margin: 100px auto 0; }
     .title:after {
       height: 6px;
@@ -543,19 +569,33 @@ html[xmlns] .clearfix {
       left: 0; }
 
   .main-text {
-    font-size: 20px;
-    width: 75%;
+    font-size: 2.9rem;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     margin-top: 80px; } }
+@media (min-width: 1100px) {
+  .title {
+    font-size: 10rem;
+    width: 689px;
+    margin: 100px auto 0; }
+    .title:after {
+      height: 6px;
+      width: 100px;
+      left: 0; } }
+html {
+  font-size: 62.5%; }
+
 body {
   height: 10000px; }
 
 ul {
   list-style: none; }
 
+#linesWrapper {
+  height: 57vh; }
+
 .triangles-wrap {
-  margin: 30px auto;
   width: 90%;
   height: 132px;
   background-image: url("../img/iphone-horiz1.png");
@@ -582,7 +622,8 @@ blockquote {
     margin-left: 22px;
     margin-top: 23px; }
   blockquote strong {
-    color: rgba(0, 0, 0, 0.7); }
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Proxima Nova Bold"; }
   blockquote cite {
     display: block;
     font-style: normal; }
@@ -612,7 +653,7 @@ blockquote {
 .box-scene {
   perspective: 700;
   width: 100%;
-  height: 350px;
+  height: 180px;
   margin: auto;
   z-index: 999; }
 
@@ -621,7 +662,7 @@ blockquote {
 
 .box {
   width: 100%;
-  height: 350px;
+  height: 100%;
   position: relative;
   transform-style: preserve-3d;
   transition: all 0.4s ease-out;
@@ -630,11 +671,11 @@ blockquote {
 .face {
   position: absolute;
   width: 100%;
-  height: 350px;
+  height: 100%;
   backface-visibility: visible;
   transform-origin: 0 0; }
   .face span {
-    font-size: 13rem; }
+    font-size: 7rem; }
 
 .front {
   background: #F1F0F1;
@@ -647,8 +688,7 @@ blockquote {
   z-index: 1;
   left: 100%; }
   .side span {
-    color: #A4C439;
-    font-size: 13rem; }
+    color: #A4C439; }
   .side .icon-apple {
     color: #fff; }
 
@@ -656,16 +696,16 @@ blockquote {
   font-size: 2.5rem;
   text-transform: uppercase; }
 
-#comments {
-  height: 100vh; }
-
 .tablet-container {
-  height: 100%; }
+  height: 100%;
+  margin-top: 60px;
+  margin-bottom: 60px; }
   .tablet-container img {
     width: 90%; }
 
 .quote-wrapper {
-  height: 100%; }
+  margin-top: 120px;
+  margin-bottom: 120px; }
 
 #toggle {
   color: #000;
@@ -758,7 +798,6 @@ blockquote {
   background-color: #1ab2c7;
   height: 100vh;
   font-size: 5rem;
-  max-height: 478px;
   text-align: center;
   text-transform: uppercase; }
 
@@ -778,7 +817,6 @@ blockquote {
   text-transform: uppercase; }
 
 #canvas {
-  margin-top: 200px;
   width: 80%;
   height: auto; }
 
@@ -796,7 +834,12 @@ blockquote {
 
   .main-subtitle {
     font-size: 7.5rem;
-    line-height: 27px; } }
+    line-height: 27px; }
+
+  .title {
+    font-size: 5rem;
+    width: 266px;
+    margin: 59px auto 0; } }
 @media (min-width: 992px) {
   .menu-list {
     margin-top: 31px; }
@@ -831,6 +874,12 @@ body {
   src: url("../../assets/fonts/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/proximanova-regular-webfont.woff2") format("woff2"), url("../../assets/fonts/proximanova-regular-webfont.woff") format("woff"), url("../../assets/fonts/proximanova-regular-webfont.ttf") format("truetype"), url("../../assets/fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../../assets/fonts/proximanova-bold-webfont.eot");
+  src: url("../../assets/fonts/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/proximanova-bold-webfont.woff2") format("woff2"), url("../../assets/fonts/proximanova-bold-webfont.woff") format("woff"), url("../../assets/fonts/proximanova-bold-webfont.ttf") format("truetype"), url("../../assets/fonts/proximanova-bold-webfont.svg#proxima_nova_bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 button {
   background-color: transparent;
   border: 0; }
@@ -844,19 +893,16 @@ button {
     height: 100vh; }
 
   #comments {
-    height: 100vh;
     padding: 0;
     background-color: #F1F0F1;
-    overflow: hidden;
-    margin-top: -11px; }
+    overflow: hidden; }
     #comments img {
       width: 85%; }
     #comments blockquote {
       font-size: 3.1rem;
-      padding: 57px 70px; }
+      padding: 57px 0; }
       #comments blockquote p {
-        margin-left: 55px;
-        width: 490px; }
+        margin-left: 55px; }
       #comments blockquote footer {
         color: rgba(0, 0, 0, 0.28);
         font-size: 2.3rem;
@@ -867,7 +913,6 @@ button {
     font-size: 3rem; }
 
   .triangles-wrap {
-    margin-top: 49px;
     height: 448px; }
     .triangles-wrap canvas {
       width: 530px !important;
@@ -878,7 +923,6 @@ button {
     font-size: 4rem; } }
 @media (min-width: 992px) {
   .triangles-wrap {
-    margin-top: 100px;
     height: 518px; }
     .triangles-wrap canvas {
       width: 611px !important;
@@ -889,10 +933,30 @@ button {
 
   .services-block span {
     font-size: 15rem;
-    margin-top: 95px; } }
+    margin-top: 95px; }
+
+  .face span {
+    font-size: 10rem; }
+
+  #comments blockquote {
+    font-size: 3.1rem;
+    max-width: 618px;
+    padding: 57px 0px; }
+
+  .tablet-container {
+    margin-top: 120px;
+    margin-bottom: 120px; }
+
+  .quote-wrapper {
+    margin-top: 216px; }
+
+  .icon-quote-close {
+    margin-right: 20px; } }
 @media (min-width: 1100px) {
+  .box-scene {
+    height: 350px; }
+
   .triangles-wrap {
-    margin-top: 100px;
     height: 520px; }
     .triangles-wrap canvas {
       width: 630px !important;
