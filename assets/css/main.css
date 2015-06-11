@@ -644,7 +644,7 @@ blockquote {
     padding: 1px; }
 
 .services-block {
-  background-color: #f1f0f1;
+  background-color: #F1F0F1;
   height: 350px;
   margin-right: 2px; }
   .services-block > .col-md-3 {
@@ -706,6 +706,36 @@ blockquote {
 .quote-wrapper {
   margin-top: 120px;
   margin-bottom: 120px; }
+
+#values .value-title {
+  color: #000;
+  font-size: 5rem;
+  text-align: center;
+  padding: 50px; }
+#values .value-main-text {
+  padding: 50px 100px;
+  font-size: 2.5rem;
+  background-color: #000;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 34px; }
+  #values .value-main-text:before {
+    content: '';
+    display: block;
+    height: 30px;
+    width: 30px;
+    background-color: #FFF;
+    position: absolute;
+    left: -15px;
+    transform: rotate(45deg);
+    top: 72px; }
+#values .square {
+  height: 250px;
+  background-color: #F1F0F1;
+  margin-right: 1px;
+  margin-bottom: 1px; }
+  #values .square:hover {
+    background-color: #8A2BE2; }
 
 #toggle {
   color: #000;
