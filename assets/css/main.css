@@ -568,7 +568,7 @@ html[xmlns] .clearfix {
 
   .main-text {
     font-size: 2.2rem;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
     margin-top: 80px; } }
@@ -715,32 +715,34 @@ blockquote {
       width: 66px; }
   #values .main-text {
     color: #FFF; }
-  #values .square-wrap {
-    margin: 50px 0 -1px;
-    position: relative; }
-  #values .square {
-    height: 160px;
-    background-color: #731bc4;
-    margin-right: 1px;
-    margin-bottom: 1px;
-    text-align: center; }
-    #values .square:hover {
-      background-color: #8A2BE2; }
-      #values .square:hover path, #values .square:hover ellipse, #values .square:hover polygon {
-        fill: #000; }
-      #values .square:hover svg {
-        margin-top: 0; }
-      #values .square:hover span {
-        display: block; }
-    #values .square svg {
-      width: 90px; }
-    #values .square path, #values .square ellipse, #values .square polygon {
-      fill: #dbd8db; }
-    #values .square span {
-      color: #000;
-      font-size: 2rem;
-      margin-top: -22px;
-      display: none; }
+
+.square-wrap {
+  margin: 50px 0 -1px;
+  position: relative; }
+
+.square {
+  height: 160px;
+  background-color: #731bc4;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  text-align: center; }
+  .square:hover {
+    background-color: #8A2BE2; }
+    .square:hover path, .square:hover ellipse, .square:hover polygon {
+      fill: #000; }
+    .square:hover svg {
+      margin-top: 0; }
+    .square:hover span {
+      display: block; }
+  .square svg {
+    width: 90px; }
+  .square path, .square ellipse, .square polygon {
+    fill: #dbd8db; }
+  .square span {
+    color: #000;
+    font-size: 2rem;
+    margin-top: -22px;
+    display: none; }
 
 #work .title {
   margin: 100px auto;
@@ -977,7 +979,7 @@ button {
   .icon-quote-open, .icon-quote-close {
     font-size: 3rem; }
 
-  #values .square-wrap {
+  .square-wrap {
     margin: 50px 0 118px;
     overflow: hidden; } }
 @media (min-width: 992px) {
@@ -1019,7 +1021,9 @@ button {
     height: 250px; }
     .square svg {
       width: 130px;
-      margin-top: 15px; }
+      margin-top: 51px; }
+    .square span {
+      margin-top: 0; }
     .square:hover svg {
       margin-top: 36px; } }
 @media (min-width: 1100px) {

@@ -214,64 +214,64 @@ ul {
 	.main-text {
 		color: #FFF;
 	}
+}
 
-	.square-wrap {
+.square-wrap {
 		margin: 50px 0 -1px;
 		position: relative;
 	}
 
-	.square {
-	  height: 160px;
-	  background-color: $purple-dark;
-	  margin-right: 1px;
-	  margin-bottom: 1px;
-	  text-align: center;
+.square {
+  height: 160px;
+  background-color: $purple-dark;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  text-align: center;
 
-	  // &:first-child {
-			// 	&:before {
-			//   	content: '';
-			// 	  display: block;
-			// 	  height: 30px;
-			// 	  width: 30px;
-			// 	  background-color: #FFF;
-			// 	  position: absolute;
-			// 	  left: -15px;
-			// 	  transform: rotate(45deg);
-			// 	  top: 84px;
-			//   }
-	  // }
+  // &:first-child {
+		// 	&:before {
+		//   	content: '';
+		// 	  display: block;
+		// 	  height: 30px;
+		// 	  width: 30px;
+		// 	  background-color: #FFF;
+		// 	  position: absolute;
+		// 	  left: -15px;
+		// 	  transform: rotate(45deg);
+		// 	  top: 84px;
+		//   }
+  // }
 
-	  &:hover {
-	  	background-color: #8A2BE2;
+  &:hover {
+  	background-color: #8A2BE2;
 
-	  	path, ellipse, polygon {
-		  	fill: #000;
-		  }
-
-		  svg {
-		  	margin-top: 0;
-		  }
-
-		  span {
-		  	display: block;
-		  }
+  	path, ellipse, polygon {
+	  	fill: #000;
 	  }
-	  
-  	svg {
-  		width: 90px;
-  	}
 
-	  path, ellipse, polygon {
-	  	fill: $gray-dark;
+	  svg {
+	  	margin-top: 0;
 	  }
 
 	  span {
-	  	color: #000;
-	  	font-size: 2rem;
-	  	margin-top: -22px;
-		  display: none;
+	  	display: block;
 	  }
+  }
+  
+	svg {
+		width: 90px;
 	}
+
+  path, ellipse, polygon {
+  	fill: $gray-dark;
+  }
+
+  span {
+  	color: #000;
+  	font-size: 2rem;
+  	margin-top: -22px;
+	  display: none;
+  }
 }
 
 // Section work
