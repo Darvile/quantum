@@ -13,47 +13,14 @@
 // Tablet
 
 @media (min-width: $screen-sm-min) {
+
+	// Section linesWrapper
+
   #linesWrapper {
   	height: 100vh;
 	}
-	
-	// Section comments
-
-	#comments {
-		// height: 80vh;
-		padding: 0;
-		background-color: #F1F0F1;
-		overflow: hidden;
-		// margin-top: -11px;
-
-		img {
-			width: 85%;
-		}
-
-		blockquote {
-			font-size: 3.1rem;
-			padding: 57px 0;
-
-			p {
-				margin-left: 55px;
-  				// width: 490px;
-			}
-
-			footer {
-				color: rgba(0, 0, 0, 0.28);
-				font-size: 2.3rem;
-  				margin-left: 58px;
-				margin-top: 30px;
-			}
-		}
-	}
-
-	.icon-quote-open, .icon-quote-close {
-		font-size: 3rem;
-	}
 
 	.triangles-wrap {
-		// margin-top: 49px;
   		height: 448px;
 
 		canvas {
@@ -65,6 +32,49 @@
 
 	.icon-quote-open, .icon-quote-close {
 		font-size: 4rem;
+	}
+
+	// Section comments
+
+	.tablet-container {
+		margin-top: 140px;
+  	margin-bottom: 60px;
+	}
+
+	#comments {
+		padding: 0;
+		overflow: hidden;
+
+		img {
+			width: 85%;
+		}
+
+		blockquote {
+			font-size: 3.1rem;
+			padding: 57px 0;
+
+			p {
+				margin-left: 55px;
+			}
+
+			footer {
+				color: rgba(0, 0, 0, 0.28);
+				font-size: 2.3rem;
+  			margin-left: 58px;
+				margin-top: 30px;
+			}
+		}
+	}
+
+	.icon-quote-open, .icon-quote-close {
+		font-size: 3rem;
+	}
+
+	// Section values
+
+	#values .square-wrap {
+	  margin: 50px 0 118px;
+	  overflow: hidden;
 	}
 
 }
@@ -100,9 +110,11 @@
 
 	.face {
 	    span {
-	  		font-size: 10rem;
+	  		font-size: 8rem;
 	    }
 	}
+
+	// Section comments
 
 	#comments {
 		blockquote {
@@ -123,6 +135,30 @@
 	.icon-quote-close {
 		margin-right: 20px;
 	}
+
+	// Section values
+	
+	.square-wrap {
+		margin: 110px 0;
+	}
+
+	.square {
+		height: 250px;
+
+		svg {
+  		width: 130px;
+  		margin-top: 15px;
+  	}
+
+  	&:hover {
+  		svg {
+  			margin-top: 36px;
+  		}
+  	}
+	} 
+
+	// Section work
+
 }
 
 
@@ -131,19 +167,18 @@
 @media (min-width: $screen-lg-min) {
   // Section services
   .box-scene {
-	  height: 350px;
+	  height: 280px;
 	}
 
   // Section comments
 
   .triangles-wrap {
-	  // margin-top: 100px;
-	  height: 520px;
+	  height: 400px;
 
 	  canvas {
-			width: 630px!important;
-		  height: 354px!important;
-		  margin-top: 84px!important;
+			width: 486px!important;
+		  height: 274px!important;
+		  margin-top: 63px!important;
 			text-align: center;
 		}
 	}

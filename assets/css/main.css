@@ -507,6 +507,8 @@ html[xmlns] .clearfix {
 .title {
   text-align: center;
   font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
   color: #FFF;
   width: 211px;
   margin: 40px auto 0;
@@ -537,13 +539,9 @@ html[xmlns] .clearfix {
 
 @media (min-width: 768px) {
   .title {
-    text-align: center;
-    font-size: 4rem;
-    color: #FFF;
-    width: 211px;
+    width: 251px;
     margin: 40px auto 0;
-    margin: 100px auto 0;
-    position: relative; }
+    margin: 100px auto 0; }
     .title:after {
       content: '';
       display: block;
@@ -560,8 +558,8 @@ html[xmlns] .clearfix {
     margin: 80px auto; } }
 @media (min-width: 992px) {
   .title {
-    font-size: 10.8rem;
-    width: 566px;
+    font-size: 5rem;
+    width: 313px;
     margin: 100px auto 0; }
     .title:after {
       height: 6px;
@@ -569,20 +567,16 @@ html[xmlns] .clearfix {
       left: 0; }
 
   .main-text {
-    font-size: 2.9rem;
-    width: 80%;
+    font-size: 2.2rem;
+    width: 60%;
     margin: 0 auto;
     text-align: center;
     margin-top: 80px; } }
 @media (min-width: 1100px) {
-  .title {
-    font-size: 10rem;
-    width: 689px;
-    margin: 100px auto 0; }
-    .title:after {
-      height: 6px;
-      width: 100px;
-      left: 0; } }
+  .title:after {
+    height: 6px;
+    width: 100px;
+    left: 0; } }
 html {
   font-size: 62.5%; }
 
@@ -641,7 +635,8 @@ blockquote {
 .services-block-wrap {
   background-color: #fff;
   overflow: hidden;
-  margin-top: 100px;
+  max-width: 1437px;
+  margin: 100px auto 0;
   text-align: center; }
   .services-block-wrap > .col-md-3 {
     padding: 1px; }
@@ -710,52 +705,64 @@ blockquote {
   margin-top: 120px;
   margin-bottom: 120px; }
 
-#values .value-title {
+#values {
+  background-color: #8A2BE2;
+  overflow: hidden; }
+  #values .title {
+    width: 184px; }
+    #values .title:after {
+      background-color: #fff;
+      width: 66px; }
+  #values .main-text {
+    color: #FFF; }
+  #values .square-wrap {
+    margin: 50px 0 -1px;
+    position: relative; }
+  #values .square {
+    height: 160px;
+    background-color: #731bc4;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    text-align: center; }
+    #values .square:hover {
+      background-color: #8A2BE2; }
+      #values .square:hover path, #values .square:hover ellipse, #values .square:hover polygon {
+        fill: #000; }
+      #values .square:hover svg {
+        margin-top: 0; }
+      #values .square:hover span {
+        display: block; }
+    #values .square svg {
+      width: 90px; }
+    #values .square path, #values .square ellipse, #values .square polygon {
+      fill: #dbd8db; }
+    #values .square span {
+      color: #000;
+      font-size: 2rem;
+      margin-top: -22px;
+      display: none; }
+
+#work .title {
+  margin: 100px auto;
+  width: 144px; }
+  #work .title:after {
+    width: 45px; }
+
+.title-wrap {
+  background-color: #201F1F;
+  text-align: left; }
+
+.work-content {
+  font-size: 2.3rem;
+  margin-left: 60px;
+  width: 70%;
+  line-height: 35px; }
+
+.content-title {
   color: #000;
   font-size: 5rem;
-  text-align: center;
-  margin-top: 75px; }
-#values .value-main-text {
-  padding: 50px 100px;
-  font-size: 2.5rem;
-  background-color: #8A2BE2;
-  font-style: italic;
-  color: #731bc4;
-  line-height: 34px; }
-  #values .value-main-text:before {
-    content: '';
-    display: block;
-    height: 30px;
-    width: 30px;
-    background-color: #FFF;
-    position: absolute;
-    left: -15px;
-    transform: rotate(45deg);
-    top: 84px; }
-#values .square {
-  height: 250px;
-  background-color: #F1F0F1;
-  margin-right: 1px;
-  margin-bottom: 1px;
-  text-align: center; }
-  #values .square:hover {
-    background-color: #8A2BE2; }
-    #values .square:hover path, #values .square:hover ellipse, #values .square:hover polygon {
-      fill: #000; }
-    #values .square:hover svg {
-      margin-top: 36px; }
-    #values .square:hover span {
-      display: block; }
-  #values .square svg {
-    width: 100%;
-    margin-top: 54px; }
-  #values .square path, #values .square ellipse, #values .square polygon {
-    fill: #dbd8db; }
-  #values .square span {
-    color: #000;
-    font-size: 2rem;
-    margin-top: 15px;
-    display: none; }
+  margin: 0 0 90px;
+  text-align: left; }
 
 #toggle {
   color: #000;
@@ -873,23 +880,7 @@ blockquote {
 @media (min-width: 768px) {
   .menu-list {
     margin-top: 271px;
-    text-align: center; }
-
-  .top-header {
-    max-height: 903px; }
-
-  .main-title {
-    font-size: 13.5rem;
-    margin: 294px 0 0; }
-
-  .main-subtitle {
-    font-size: 7.5rem;
-    line-height: 27px; }
-
-  .title {
-    font-size: 5rem;
-    width: 266px;
-    margin: 59px auto 0; } }
+    text-align: center; } }
 @media (min-width: 992px) {
   .menu-list {
     margin-top: 31px; }
@@ -936,15 +927,39 @@ button {
   button:focus {
     outline: none; }
 
+.btn {
+  color: #000;
+  margin-top: 49px;
+  font-size: 2rem;
+  padding: 5px 61px;
+  border: 1px solid #000; }
+  .btn:hover {
+    background-color: #1ab2c7;
+    color: #fff;
+    border: 2px solid #158e9e; }
+
 /* Responsive
    ========================================================================== */
 @media (min-width: 768px) {
   #linesWrapper {
     height: 100vh; }
 
+  .triangles-wrap {
+    height: 448px; }
+    .triangles-wrap canvas {
+      width: 530px !important;
+      height: 297px !important;
+      margin-top: 73px !important; }
+
+  .icon-quote-open, .icon-quote-close {
+    font-size: 4rem; }
+
+  .tablet-container {
+    margin-top: 140px;
+    margin-bottom: 60px; }
+
   #comments {
     padding: 0;
-    background-color: #F1F0F1;
     overflow: hidden; }
     #comments img {
       width: 85%; }
@@ -962,15 +977,9 @@ button {
   .icon-quote-open, .icon-quote-close {
     font-size: 3rem; }
 
-  .triangles-wrap {
-    height: 448px; }
-    .triangles-wrap canvas {
-      width: 530px !important;
-      height: 297px !important;
-      margin-top: 73px !important; }
-
-  .icon-quote-open, .icon-quote-close {
-    font-size: 4rem; } }
+  #values .square-wrap {
+    margin: 50px 0 118px;
+    overflow: hidden; } }
 @media (min-width: 992px) {
   .triangles-wrap {
     height: 518px; }
@@ -986,7 +995,7 @@ button {
     margin-top: 95px; }
 
   .face span {
-    font-size: 10rem; }
+    font-size: 8rem; }
 
   #comments blockquote {
     font-size: 3.1rem;
@@ -1001,17 +1010,28 @@ button {
     margin-top: 216px; }
 
   .icon-quote-close {
-    margin-right: 20px; } }
+    margin-right: 20px; }
+
+  .square-wrap {
+    margin: 110px 0; }
+
+  .square {
+    height: 250px; }
+    .square svg {
+      width: 130px;
+      margin-top: 15px; }
+    .square:hover svg {
+      margin-top: 36px; } }
 @media (min-width: 1100px) {
   .box-scene {
-    height: 350px; }
+    height: 280px; }
 
   .triangles-wrap {
-    height: 520px; }
+    height: 400px; }
     .triangles-wrap canvas {
-      width: 630px !important;
-      height: 354px !important;
-      margin-top: 84px !important;
+      width: 486px !important;
+      height: 274px !important;
+      margin-top: 63px !important;
       text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */
