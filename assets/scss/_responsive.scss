@@ -51,7 +51,8 @@
 
 		blockquote {
 			font-size: 3.1rem;
-			padding: 57px 0;
+			width: 90%;
+			margin: 0 auto;
 
 			p {
 				margin-left: 55px;
@@ -76,6 +77,25 @@
 	  margin: 50px 0 118px;
 	  overflow: hidden;
 	}
+
+	// Section work 
+	
+	#work {
+		.title {
+			margin: 100px auto;
+		}
+	}
+
+	.work-content {
+	  font-size: 2.3rem;
+	  width: 90%;
+	  line-height: 35px;
+	}
+
+	.content-title {
+	  font-size: 5rem;
+	}
+
 
 }
 
@@ -118,9 +138,9 @@
 
 	#comments {
 		blockquote {
+			width: 100%;
 			font-size: 3.1rem;
 			max-width: 618px;
-	  	padding: 57px 0px;
 		}
 	}
 	.tablet-container {
@@ -129,7 +149,7 @@
 	}
 
 	.quote-wrapper {
-	  margin-top: 216px;
+	  margin-top: 161px;
 	}
 
 	.icon-quote-close {
@@ -162,20 +182,42 @@
 	} 
 
 	// Section work
+	
+	.content-title {
+	  text-align: left;
+	}
 
+	.work-content {
+		margin-left: 40px;
+
+		.btn {
+			margin: 49px 0;
+		}
+	}
+
+	.work-image-wrap {
+		text-align: center;
+		
+		img {
+			width: 70%;
+			margin-top: 94px;
+		}
+	}
 }
 
 
 // Desktop - Large monitors
 
 @media (min-width: $screen-lg-min) {
+
   // Section services
+
   .box-scene {
 	  height: 280px;
 	}
 
-  // Section comments
-
+	// Section lines
+	
   .triangles-wrap {
 	  height: 400px;
 
@@ -185,6 +227,20 @@
 		  margin-top: 63px!important;
 			text-align: center;
 		}
+	}
+
+  // Section comments
+
+	.quote-wrapper {
+	  margin-top: 216px;
+	}
+
+	// Section work
+
+	.work-content {
+		max-width: 640px;
+	  margin: 160px auto;
+	  padding-left: 45px;
 	}
 
 	

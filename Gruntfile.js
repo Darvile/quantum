@@ -81,6 +81,7 @@ module.exports = function( grunt ) {
 						'assets/js/lib/projector.js',
 						'assets/js/lib/canvas.renderer.js',
 						'assets/js/lib/canvas.lines.js',
+						'assets/js/lib/jquery.slickSlider.js',
 						'assets/js/functions.js'
 					]
 				}
