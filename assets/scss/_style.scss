@@ -19,6 +19,10 @@ ul {
 	list-style: none;
 }
 
+* {
+	transition: 0.3s;
+}
+
 // Section Lines
 
 #linesWrapper {
@@ -198,15 +202,15 @@ ul {
 	  color: #000;
 	  font-size: 5rem;
 	  text-align: center;
-	  padding: 50px;
+	  margin-top: 75px;
 	}
 
 	.value-main-text{
 	  padding: 50px 100px;
 	  font-size: 2.5rem;
-	  background-color: #000;
+	  background-color: $purple;
 	  font-style: italic;
-	  color: rgba(255, 255, 255, 0.62);
+	  color: $purple-dark;
 	  line-height: 34px;
 
 	  &:before {
@@ -218,7 +222,7 @@ ul {
 		  position: absolute;
 		  left: -15px;
 		  transform: rotate(45deg);
-		  top: 72px;
+		  top: 84px;
 	  }
 	}
 
@@ -227,9 +231,38 @@ ul {
 	  background-color: $gray;
 	  margin-right: 1px;
 	  margin-bottom: 1px;
+	  text-align: center;
 
 	  &:hover {
 	  	background-color: #8A2BE2;
+
+	  	path, ellipse, polygon {
+		  	fill: #000;
+		  }
+
+		  svg {
+		  	margin-top: 36px;
+		  }
+
+		  span {
+		  	display: block;
+		  }
+	  }
+	  
+  	svg {
+  		width: 100%;
+  		margin-top: 54px;
+  	}
+
+	  path, ellipse, polygon {
+	  	fill: $gray-dark;
+	  }
+
+	  span {
+	  	color: #000;
+	  	font-size: 2rem;
+		  margin-top: 15px;
+		  display: none;
 	  }
 	}
 }

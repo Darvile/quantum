@@ -592,6 +592,9 @@ body {
 ul {
   list-style: none; }
 
+* {
+  transition: 0.3s; }
+
 #linesWrapper {
   height: 57vh; }
 
@@ -711,13 +714,13 @@ blockquote {
   color: #000;
   font-size: 5rem;
   text-align: center;
-  padding: 50px; }
+  margin-top: 75px; }
 #values .value-main-text {
   padding: 50px 100px;
   font-size: 2.5rem;
-  background-color: #000;
+  background-color: #8A2BE2;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.62);
+  color: #731bc4;
   line-height: 34px; }
   #values .value-main-text:before {
     content: '';
@@ -728,14 +731,31 @@ blockquote {
     position: absolute;
     left: -15px;
     transform: rotate(45deg);
-    top: 72px; }
+    top: 84px; }
 #values .square {
   height: 250px;
   background-color: #F1F0F1;
   margin-right: 1px;
-  margin-bottom: 1px; }
+  margin-bottom: 1px;
+  text-align: center; }
   #values .square:hover {
     background-color: #8A2BE2; }
+    #values .square:hover path, #values .square:hover ellipse, #values .square:hover polygon {
+      fill: #000; }
+    #values .square:hover svg {
+      margin-top: 36px; }
+    #values .square:hover span {
+      display: block; }
+  #values .square svg {
+    width: 100%;
+    margin-top: 54px; }
+  #values .square path, #values .square ellipse, #values .square polygon {
+    fill: #dbd8db; }
+  #values .square span {
+    color: #000;
+    font-size: 2rem;
+    margin-top: 15px;
+    display: none; }
 
 #toggle {
   color: #000;
