@@ -290,6 +290,7 @@ ul {
 .title-wrap {
 		background-color: $black;
 		text-align: left;
+		margin-top: -4px;
 		overflow: hidden;
 	}
 
@@ -334,6 +335,8 @@ ul {
   text-align: center;
   width: 100%;
   padding: 20px;
+  color: #FFF;
+  letter-spacing: 0.1em;
 
   // &:before {
 		//   	content: '';
@@ -349,8 +352,25 @@ ul {
 }
 
 .clients-logo-wrap {
-	// width: 600px;
-	// height: 600px;
+	background-color: $gray;
+	padding: 50px 0px;
+	cursor: grab;
+	max-height: 260px;
+  overflow: hidden;
+}
+
+.slick-initialized .slick-slide {
+  height: 160px;
+  border-right: 1px solid $gray-dark;
+  filter: grayscale(100%);
+}
+
+.slick-slide {
+	img {
+		display: block;
+  	width: 60%;
+  	margin: 0 auto;
+	}
 }
 
 	
