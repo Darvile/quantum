@@ -16,7 +16,6 @@ button {
 
 .btn {
 	color: #000;
-	margin-top: 49px;
 	font-size: 2rem;
 	padding: 5px 61px;
   border: 1px solid #000;
@@ -24,6 +23,6 @@ button {
   &:hover {
   	background-color: $brand-default;
   	color: #fff;
-  	border: 2px solid $brand-default-dark;
+  	border: 1px solid $brand-default;
   }
 }

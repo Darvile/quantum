@@ -664,7 +664,10 @@ html {
   font-size: 62.5%; }
 
 body {
-  height: 10000px; }
+  height: 10000px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 ul {
   list-style: none; }
@@ -832,6 +835,8 @@ blockquote {
   width: 94px; }
   #work .title:after {
     width: 45px; }
+#work .btn {
+  margin-top: 49px; }
 
 .title-wrap {
   background-color: #201F1F;
@@ -867,7 +872,7 @@ blockquote {
   margin: 0;
   text-align: center;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   color: #FFF;
   letter-spacing: 0.1em; }
 
@@ -887,6 +892,55 @@ blockquote {
   display: block;
   width: 60%;
   margin: 0 auto; }
+
+#features .title-wrap {
+  color: #000;
+  border-top: 1px dotted #dbd8db;
+  margin-bottom: 60px; }
+#features .title {
+  width: 245px;
+  margin: 100px auto; }
+  #features .title:after {
+    width: 55px; }
+
+.features-content {
+  height: 800px;
+  margin-top: -15px; }
+  .features-content .features-block {
+    height: 274px;
+    font-size: 1.5rem;
+    padding: 19px 20px;
+    border: 1px solid #dbd8db;
+    text-align: center;
+    border-bottom: 0; }
+    .features-content .features-block:last-child {
+      border: 1px solid #dbd8db; }
+    .features-content .features-block svg {
+      fill: #6B6B6B; }
+    .features-content .features-block p {
+      margin: 0 auto;
+      max-width: 239px;
+      width: 90%;
+      line-height: 25px;
+      text-transform: uppercase; }
+    .features-content .features-block:hover svg {
+      fill: #1ab2c7; }
+    .features-content .features-block:hover p {
+      color: #000; }
+    .features-content .features-block:hover strong {
+      fill: #1ab2c7; }
+  .features-content .job-block .btn {
+    width: 100%;
+    padding: 40px;
+    margin-top: 40px;
+    font-size: 4rem;
+    font-weight: 600; }
+  .features-content .job-text {
+    border: 1px solid #DBD8DB;
+    margin-top: 40px;
+    padding: 45px;
+    text-align: center;
+    font-size: 2.6rem; }
 
 #toggle {
   color: #000;
@@ -1053,14 +1107,13 @@ button {
 
 .btn {
   color: #000;
-  margin-top: 49px;
   font-size: 2rem;
   padding: 5px 61px;
   border: 1px solid #000; }
   .btn:hover {
     background-color: #1ab2c7;
     color: #fff;
-    border: 2px solid #158e9e; }
+    border: 1px solid #1ab2c7; }
 
 /* Responsive
    ========================================================================== */
@@ -1069,11 +1122,11 @@ button {
     height: 100vh; }
 
   .triangles-wrap {
-    height: 448px; }
+    height: 378px; }
     .triangles-wrap canvas {
-      width: 530px !important;
-      height: 297px !important;
-      margin-top: 73px !important; }
+      width: 459px !important;
+      height: 259px !important;
+      margin-top: 60px !important; }
 
   .icon-quote-open, .icon-quote-close {
     font-size: 4rem; }
@@ -1115,7 +1168,19 @@ button {
     line-height: 35px; }
 
   .content-title {
-    font-size: 5rem; } }
+    font-size: 5rem; }
+
+  #features .title {
+    width: 241px; }
+    #features .title:after {
+      width: 55px; }
+
+  .job-block .btn {
+    padding: 39px 0;
+    font-size: 3rem; }
+
+  .job-text {
+    height: 130px; } }
 @media (min-width: 992px) {
   .triangles-wrap {
     height: 518px; }
@@ -1173,7 +1238,16 @@ button {
     text-align: center; }
     .work-image-wrap img {
       width: 70%;
-      margin-top: 94px; } }
+      margin-top: 94px; }
+
+  #features .title {
+    width: 365px; }
+    #features .title:after {
+      width: 55px; }
+
+  .job-block .btn {
+    padding: 40px;
+    font-size: 4rem; } }
 @media (min-width: 1100px) {
   .box-scene {
     height: 280px; }

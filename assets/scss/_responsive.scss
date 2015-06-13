@@ -21,12 +21,12 @@
 	}
 
 	.triangles-wrap {
-  		height: 448px;
+  	height: 378px;
 
 		canvas {
-			width: 530px!important;
-		  height: 297px!important;
-		  margin-top: 73px!important;
+			width: 459px!important;
+		  height: 259px!important;
+		  margin-top: 60px!important;
 		}
 	}
 
@@ -96,7 +96,29 @@
 	  font-size: 5rem;
 	}
 
+	// Section features
 
+	#features {
+		.title {
+			width: 241px;
+		  // width: 365px;
+
+		  &:after {
+		  	width: 55px;
+		  }
+		}
+	}
+
+	.job-block {
+		.btn {
+			padding: 39px 0;
+			font-size: 3rem;
+		}
+	}
+
+	.job-text {
+		height: 130px;
+  }
 }
 
 
@@ -201,6 +223,25 @@
 		img {
 			width: 70%;
 			margin-top: 94px;
+		}
+	}
+
+	// Section features
+
+	#features {
+		.title {
+		  width: 365px;
+
+		  &:after {
+		  	width: 55px;
+		  }
+		}
+	}
+
+	.job-block {
+		.btn {
+			padding: 40px;
+			font-size: 4rem;
 		}
 	}
 }

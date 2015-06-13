@@ -13,6 +13,8 @@
 
  body {
  	height: 10000px;
+ 	overflow-x: hidden;
+ 	@include font-smoothing(on);
  }
 
 ul {
@@ -32,7 +34,6 @@ ul {
 // Section Lines Wrapper
 
 .triangles-wrap {
-	// margin: 30px auto;
 	width: 90%;
 	height: 132px;
 	background-image: url('../img/iphone-horiz1.png');
@@ -285,6 +286,10 @@ ul {
 			width: 45px;
 		}
 	}
+
+	.btn {
+		margin-top: 49px;
+	}
 }
 
 .title-wrap {
@@ -334,7 +339,7 @@ ul {
   margin: 0;
   text-align: center;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   color: #FFF;
   letter-spacing: 0.1em;
 
@@ -368,9 +373,90 @@ ul {
 .slick-slide {
 	img {
 		display: block;
-  	width: 60%;
-  	margin: 0 auto;
+	  	width: 60%;
+	  	margin: 0 auto;
 	}
+}
+
+// Section features
+
+#features {
+	.title-wrap {
+  	color: #000;
+  	border-top: 1px dotted $gray-dark;
+  	margin-bottom: 60px;
+	}
+
+	.title {
+		width: 245px;
+		margin: 100px auto;
+
+		&:after {
+	  	width: 55px;
+	  }
+	}
+}
+
+.features-content {
+	height: 800px;
+  margin-top: -15px;
+
+  .features-block {
+  	height: 274px;
+	  font-size: 1.5rem;
+  	padding: 19px 20px;
+	  border: 1px solid $gray-dark;
+	  text-align: center;
+	  border-bottom: 0;
+
+	  &:last-child {
+	  	border: 1px solid $gray-dark;
+	  }
+
+	  svg {
+	  	fill: #6B6B6B;
+	  }
+
+	  p {
+	  	margin: 0 auto;
+		  max-width: 239px;
+		  width: 90%;
+		  line-height: 25px;
+		  text-transform: uppercase;
+	  }
+
+	  &:hover {
+	  	svg {
+		  	fill: $brand-default;
+		  }
+
+		  p {
+		  	color: #000;
+		  }
+
+		  strong {
+		  	fill: $brand-default;
+		  }
+	  }
+  }
+
+  .job-block {
+  	.btn {
+  		width: 100%;
+		  padding: 40px;
+  		margin-top: 40px;
+		  font-size: 4rem;
+		  font-weight: 600;
+  	}
+  }
+
+  .job-text {
+  	border: 1px solid #DBD8DB;
+  	margin-top: 40px;
+  	padding: 45px;
+		text-align: center;
+		font-size: 2.6rem;
+  }
 }
 
 	
