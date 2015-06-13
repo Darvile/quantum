@@ -21,6 +21,10 @@ ul {
 	list-style: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 * {
 	transition: 0.3s;
 }
@@ -402,12 +406,17 @@ ul {
   margin-top: -15px;
 
   .features-block {
-  	height: 274px;
+  	// height: 274px;
 	  font-size: 1.5rem;
   	padding: 19px 20px;
 	  border: 1px solid $gray-dark;
 	  text-align: center;
 	  border-bottom: 0;
+
+	  .btn {
+	  	// border: 1px solid $gray-dark;
+	  	// color: $text-color;
+	  }
 
 	  &:last-child {
 	  	border: 1px solid $gray-dark;
@@ -447,6 +456,7 @@ ul {
   		margin-top: 40px;
 		  font-size: 4rem;
 		  font-weight: 600;
+		  text-decoration: none;
   	}
   }
 
