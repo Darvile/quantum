@@ -24,73 +24,24 @@ a {
 	text-decoration: none;
 }
 
+canvas {
+	position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
 * {
 	transition: 0.2s;
-}
-
-// Section Lines
-
-#linesWrapper {
-	height: 57vh;
-}
-
-// Section Lines Wrapper
-
-.triangles-wrap {
-	width: 90%;
-	height: 132px;
-	background-image: url('../img/iphone-horiz1.png');
-	background-repeat: no-repeat;
-	width: 100%;
-	background-position: center;
-	background-size: contain;
-	text-align: center;
-
-	canvas {
-		margin-top: 22px;
-		width: 155px!important;
-  		height: 86px!important;
-		text-align: center;
-	}
-}
-
-	blockquote {
-		color: rgba(0, 0, 0, 0.56);
-		font-size: 2.3rem;
-  	padding: 20px 20px;
-
-		p {
-			margin-left: 23px;
-		}
-
-		footer {
-			color: rgba(0, 0, 0, 0.28);
-			font-size: 2rem;
-			margin-left: 22px;
-  			margin-top: 23px;
-		}
-
-		strong {
-			color: rgba(0, 0, 0, 0.7);
-			font-family: $font-bold;
-		}
-
-		cite {
-			display: block;
-			font-style: normal;
-		}
-	}
-
-
-.icon-quote-open, .icon-quote-close {
-	font-size: 2rem;
 }
 
 // Section Services
 
 #services {
-	background-color: #201F1F;
   display: inline-block;
+
+  .title {
+  	color: #000;
+  }
 }
 
 .services-block-wrap {
@@ -158,20 +109,26 @@ a {
 }
 
 .side {
-    background: #201F1F;
-    transform: rotateY(90deg);
-    z-index: 1;
-    left: 100%;
+  background: #201F1F;
+  transform: rotateY(90deg);
+  z-index: 1;
+  left: 100%;
 
-    span {
-    	color: #A4C439;
-  		// font-size: 13rem;
-  		// margin-top: 110px;
-    }
+  span {
+  	color: #A4C439;
+  }
 
-    .icon-apple {
-    	color: #fff;
-    }
+  .icon-apple {
+  	color: #fff;
+  }
+
+  .icon-prog {
+  	color: $brand-default;
+  }
+
+  .icon-web {
+  	color: #C8373C;
+  }
 }
 
 .cube-text {
@@ -203,7 +160,7 @@ a {
 // Section Values
 
 #values {
-	background-color: $purple;
+	background-color: $brand-default;
 	overflow: hidden;
 
 	.title {
@@ -227,16 +184,17 @@ a {
 
 .square {
   height: 160px;
-  background-color: $purple-dark;
+  background-color: $brand-default-dark;
   margin-right: 1px;
   margin-bottom: 1px;
   text-align: center;
 
   &:hover {
-  	background-color: #8A2BE2;
+  	background-color: #0B5B66;
+  	background-color: $brand-default;
 
   	path, ellipse, polygon {
-	  	fill: #000;
+	  	fill: $gray-dark;
 	  }
 
 	  svg {
@@ -253,11 +211,11 @@ a {
 	}
 
   path, ellipse, polygon {
-  	fill: $gray-dark;
+  	fill: #0B5B66;
   }
 
   span {
-  	color: #000;
+  	color: $gray-dark;;
   	font-size: 2rem;
   	margin-top: -22px;
 	  display: none;

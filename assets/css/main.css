@@ -695,51 +695,18 @@ ul {
 a {
   text-decoration: none; }
 
+canvas {
+  position: absolute;
+  top: 0;
+  z-index: -1; }
+
 * {
   transition: 0.2s; }
 
-#linesWrapper {
-  height: 57vh; }
-
-.triangles-wrap {
-  width: 90%;
-  height: 132px;
-  background-image: url("../img/iphone-horiz1.png");
-  background-repeat: no-repeat;
-  width: 100%;
-  background-position: center;
-  background-size: contain;
-  text-align: center; }
-  .triangles-wrap canvas {
-    margin-top: 22px;
-    width: 155px !important;
-    height: 86px !important;
-    text-align: center; }
-
-blockquote {
-  color: rgba(0, 0, 0, 0.56);
-  font-size: 2.3rem;
-  padding: 20px 20px; }
-  blockquote p {
-    margin-left: 23px; }
-  blockquote footer {
-    color: rgba(0, 0, 0, 0.28);
-    font-size: 2rem;
-    margin-left: 22px;
-    margin-top: 23px; }
-  blockquote strong {
-    color: rgba(0, 0, 0, 0.7);
-    font-family: "Proxima Nova Bold"; }
-  blockquote cite {
-    display: block;
-    font-style: normal; }
-
-.icon-quote-open, .icon-quote-close {
-  font-size: 2rem; }
-
 #services {
-  background-color: #201F1F;
   display: inline-block; }
+  #services .title {
+    color: #000; }
 
 .services-block-wrap {
   background-color: #fff;
@@ -798,6 +765,10 @@ blockquote {
     color: #A4C439; }
   .side .icon-apple {
     color: #fff; }
+  .side .icon-prog {
+    color: #1ab2c7; }
+  .side .icon-web {
+    color: #C8373C; }
 
 .cube-text {
   font-size: 2.5rem;
@@ -815,7 +786,7 @@ blockquote {
   margin-bottom: 120px; }
 
 #values {
-  background-color: #8A2BE2;
+  background-color: #1ab2c7;
   overflow: hidden; }
   #values .title {
     width: 120px; }
@@ -831,14 +802,15 @@ blockquote {
 
 .square {
   height: 160px;
-  background-color: #731bc4;
+  background-color: #158e9e;
   margin-right: 1px;
   margin-bottom: 1px;
   text-align: center; }
   .square:hover {
-    background-color: #8A2BE2; }
+    background-color: #0B5B66;
+    background-color: #1ab2c7; }
     .square:hover path, .square:hover ellipse, .square:hover polygon {
-      fill: #000; }
+      fill: #dbd8db; }
     .square:hover svg {
       margin-top: 0; }
     .square:hover span {
@@ -846,9 +818,9 @@ blockquote {
   .square svg {
     width: 90px; }
   .square path, .square ellipse, .square polygon {
-    fill: #dbd8db; }
+    fill: #0B5B66; }
   .square span {
-    color: #000;
+    color: #dbd8db;
     font-size: 2rem;
     margin-top: -22px;
     display: none; }
@@ -1146,27 +1118,34 @@ blockquote {
       color: #1ab2c7; }
 
 .top-header {
-  color: #000;
-  background-color: #1ab2c7;
+  font-family: "Proxima Nova";
+  color: rgba(26, 178, 199, 0.49);
   height: 100vh;
   font-size: 5rem;
   text-align: center;
   text-transform: uppercase; }
 
 .main-title {
-  font-family: "Roboto";
   margin: 164px 0 0;
   font-size: 4.8rem;
   font-weight: 700; }
 
 .main-subtitle {
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.6);
   display: block;
-  font-family: "Roboto";
   font-weight: 400;
   font-size: 3.8rem;
   line-height: 20px;
   text-transform: uppercase; }
+
+.main-sub-subtitle {
+  display: block;
+  margin-top: 40px;
+  font-size: 3rem;
+  width: 520px;
+  margin: 40px auto;
+  color: rgba(131, 129, 129, 0.81);
+  text-transform: none; }
 
 #canvas {
   width: 80%;
@@ -1262,19 +1241,6 @@ button {
 /* Responsive
    ========================================================================== */
 @media (min-width: 768px) {
-  #linesWrapper {
-    height: 70vh; }
-
-  .triangles-wrap {
-    height: 378px; }
-    .triangles-wrap canvas {
-      width: 459px !important;
-      height: 259px !important;
-      margin-top: 60px !important; }
-
-  .icon-quote-open, .icon-quote-close {
-    font-size: 4rem; }
-
   .tablet-container {
     margin-top: 140px;
     margin-bottom: 60px; }
@@ -1340,9 +1306,6 @@ button {
     padding: 34px 20px;
     font-size: 2.4rem; } }
 @media (min-width: 992px) {
-  #linesWrapper {
-    height: 100vh; }
-
   .triangles-wrap {
     height: 518px; }
     .triangles-wrap canvas {

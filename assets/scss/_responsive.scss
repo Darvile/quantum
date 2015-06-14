@@ -14,26 +14,6 @@
 
 @media (min-width: $screen-sm-min) {
 
-	// Section linesWrapper
-
-  #linesWrapper {
-  	height: 70vh;
-	}
-
-	.triangles-wrap {
-  	height: 378px;
-
-		canvas {
-			width: 459px!important;
-		  height: 259px!important;
-		  margin-top: 60px!important;
-		}
-	}
-
-	.icon-quote-open, .icon-quote-close {
-		font-size: 4rem;
-	}
-
 	// Section comments
 
 	.tablet-container {
@@ -148,12 +128,6 @@
 // Desktop
 
 @media (min-width: $screen-md-min) {
-
-	// Section Lines
-
-	#linesWrapper {
-  	height: 100vh;
-	}
 
 	// Section comments
 

@@ -76,12 +76,10 @@ module.exports = function( grunt ) {
 				files: {
 					'dist/js/main.min.js': [
 						'assets/js/lib/jquery-1.11.1.js',
-						'assets/js/lib/particles.text.js',
 						'assets/js/lib/three.js',
-						'assets/js/lib/projector.js',
-						'assets/js/lib/canvas.renderer.js',
-						'assets/js/lib/canvas.lines.js',
 						'assets/js/lib/jquery.slickSlider.js',
+						'assets/js/lib/detector.js',
+						'assets/js/lib/particles.sprite.js',
 						'assets/js/functions.js'
 					]
 				}
