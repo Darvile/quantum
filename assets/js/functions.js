@@ -58,6 +58,22 @@
 	  ]
 	});
 
+	$('#rotatescroll').tinycircleslider({
+		interval: true,
+		dotsSnap: true
+	});
+
+
+	$(window).on('scroll', function () {
+		// var top = $(this).scrollTop();
+		// if(top >= 6000) {
+		// 	$('#team .title-wrap').css('position', 'fixed');
+		// } else {
+		// 	$('#team .title-wrap').css('position', 'initial');
+		// }
+	});
+
+
 
     /**
     * Particles Text

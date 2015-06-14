@@ -151,7 +151,7 @@ html[xmlns] .clearfix {
   .title {
     font-size: 5rem;
     width: 313px;
-    margin: 100px auto 0;
+    margin: 100px auto;
     
 
     &:after {
@@ -166,7 +166,6 @@ html[xmlns] .clearfix {
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    margin-top: 80px;
   }
 
 }
@@ -177,10 +176,6 @@ html[xmlns] .clearfix {
 @media (min-width: $screen-lg-min) {
 
   .title {
-    // font-size: 10rem;
-    // width: 689px;
-    // margin: 100px auto 0;
-
     &:after {
       height: 6px;
       width: 100px;

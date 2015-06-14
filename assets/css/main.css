@@ -428,23 +428,41 @@ th {
   [class^="icon-"]:before, [class*=" icon-"]:before {
     font-family: 'icomoon'; }
 
-.icon-quote-open:before {
+.icon-linkedin:before {
   content: "\e600"; }
 
-.icon-web:before {
+.icon-twitter:before {
   content: "\e601"; }
 
-.icon-apple:before {
+.icon-phone2:before {
   content: "\e602"; }
 
-.icon-android:before {
+.icon-facebook:before {
   content: "\e603"; }
 
-.icon-prog:before {
+.icon-location:before {
   content: "\e604"; }
 
-.icon-quote-close:before {
+.icon-google:before {
   content: "\e605"; }
+
+.icon-android:before {
+  content: "\e606"; }
+
+.icon-apple:before {
+  content: "\e607"; }
+
+.icon-prog:before {
+  content: "\e608"; }
+
+.icon-quote-close:before {
+  content: "\e609"; }
+
+.icon-quote-open:before {
+  content: "\e60a"; }
+
+.icon-web:before {
+  content: "\e60b"; }
 
 /* Slider */
 .slick-slider {
@@ -643,7 +661,7 @@ html[xmlns] .clearfix {
   .title {
     font-size: 5rem;
     width: 313px;
-    margin: 100px auto 0; }
+    margin: 100px auto; }
     .title:after {
       height: 6px;
       width: 100px;
@@ -653,8 +671,7 @@ html[xmlns] .clearfix {
     font-size: 2.2rem;
     width: 80%;
     margin: 0 auto;
-    text-align: center;
-    margin-top: 80px; } }
+    text-align: center; } }
 @media (min-width: 1100px) {
   .title:after {
     height: 6px;
@@ -664,7 +681,6 @@ html {
   font-size: 62.5%; }
 
 body {
-  height: 10000px;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -676,7 +692,7 @@ a {
   text-decoration: none; }
 
 * {
-  transition: 0.3s; }
+  transition: 0.2s; }
 
 #linesWrapper {
   height: 57vh; }
@@ -907,8 +923,8 @@ blockquote {
     width: 55px; }
 
 .features-content {
-  height: 800px;
-  margin-top: -15px; }
+  margin-top: -15px;
+  margin-bottom: 50px; }
   .features-content .features-block {
     font-size: 1.5rem;
     padding: 19px 20px;
@@ -944,6 +960,85 @@ blockquote {
     padding: 45px;
     text-align: center;
     font-size: 2.6rem; }
+
+#team .title-wrap {
+  top: 0;
+  right: 0;
+  background-color: transparent; }
+#team .title {
+  margin-bottom: 100px;
+  color: #000;
+  width: 375px; }
+#team .col-md-3 {
+  padding: 0; }
+
+.team-member {
+  height: 239px;
+  overflow: hidden;
+  filter: grayscale(100%); }
+  .team-member:hover .team-text {
+    top: 0;
+    opacity: 1;
+    color: #FFF;
+    font-weight: 600; }
+  .team-member img {
+    width: 100%; }
+
+.team-text {
+  text-align: center;
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.59);
+  padding: 98px;
+  display: block;
+  position: absolute;
+  top: 239px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0; }
+  .team-text span {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: -4px;
+    display: block; }
+
+#contact .title {
+  width: 232px; }
+
+.contact-form {
+  margin-top: 80px; }
+
+.footer {
+  margin-top: 120px; }
+
+.social-wrap a {
+  color: #6B6B6B; }
+
+.social {
+  font-size: 10rem;
+  padding: 40px 0 20px;
+  text-align: center;
+  border: 1px dotted #6B6B6B; }
+  .social:first-child {
+    border-left: 0; }
+  .social:hover .icon-twitter {
+    color: #2ba9e1; }
+  .social:hover .icon-facebook {
+    color: #3b5998; }
+  .social:hover .icon-google {
+    color: #d34836; }
+  .social:hover .icon-linkedin {
+    color: #0077b5; }
+  .social:hover .icon-location {
+    color: #731bc4; }
+  .social:hover .icon-phone2 {
+    color: #000; }
+
+.footer-bottom {
+  background-color: #000;
+  text-align: center;
+  padding: 14px;
+  color: #FFF; }
 
 #toggle {
   color: #000;
@@ -1102,6 +1197,27 @@ body {
   src: url("../../assets/fonts/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/proximanova-bold-webfont.woff2") format("woff2"), url("../../assets/fonts/proximanova-bold-webfont.woff") format("woff"), url("../../assets/fonts/proximanova-bold-webfont.ttf") format("truetype"), url("../../assets/fonts/proximanova-bold-webfont.svg#proxima_nova_bold") format("svg");
   font-weight: normal;
   font-style: normal; }
+.input-field, input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px solid #DBD8DB;
+  background-color: transparent;
+  margin-top: 30px;
+  padding: 30px;
+  font-size: 2.5rem;
+  width: 100%; }
+
+textarea {
+  min-height: 300px; }
+
+.btn.submit {
+  margin: 30px 0;
+  border: 1px solid #158e9e;
+  background-color: #1ab2c7;
+  color: #fff; }
+  .btn.submit:hover {
+    background-color: #158e9e; }
+
 button {
   background-color: transparent;
   border: 0; }

@@ -6,6 +6,32 @@
 
 //     # Form styles. 
 
+.input-field {
+	border: 1px solid #DBD8DB;
+  background-color: transparent;
+  margin-top: 30px;
+  padding: 30px;
+  font-size: 2.5rem;
+  width: 100%;
+}
 
+input[type="text"],
+input[type="email"],
+textarea {
+  @extend .input-field;
+}
 
+textarea {
+	min-height: 300px;
+}
 
+.btn.submit {
+	margin: 30px 0;
+	border: 1px solid $brand-default-dark;
+	background-color: $brand-default;
+	color: #fff;
+
+	&:hover {
+		background-color: $brand-default-dark;
+	}
+}
