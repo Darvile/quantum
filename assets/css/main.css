@@ -883,8 +883,11 @@ blockquote {
   margin: 0 0 60px;
   text-align: center; }
 
-.work-image-wrap img {
-  width: 100%; }
+.work-image-wrap {
+  text-align: center; }
+  .work-image-wrap img {
+    width: 70%;
+    margin-bottom: 80px; }
 
 #clients .title {
   margin: 100px auto;
@@ -944,6 +947,7 @@ blockquote {
       max-width: 239px;
       width: 90%;
       line-height: 25px;
+      height: 70px;
       text-transform: uppercase; }
     .features-content .features-block:hover svg {
       fill: #1ab2c7; }
@@ -1316,17 +1320,25 @@ button {
   .content-title {
     font-size: 5rem; }
 
+  .work-image-wrap img {
+    width: 60%; }
+
   #features .title {
     width: 241px; }
     #features .title:after {
       width: 55px; }
+
+  .features-content .features-block {
+    border: 1px solid #dbd8db; }
 
   .job-block .btn {
     padding: 39px 0;
     font-size: 3rem; }
 
   .job-text {
-    height: 130px; } }
+    height: 117px;
+    padding: 34px 20px;
+    font-size: 2.4rem; } }
 @media (min-width: 992px) {
   #linesWrapper {
     height: 100vh; }
@@ -1433,8 +1445,10 @@ button {
     padding-left: 45px; }
 
   .job-block {
-    padding: 40px;
     font-size: 4rem; }
+
+  .job-text {
+    padding: 47px 0 82px 60px; }
 
   .team-member {
     height: 239px; }

@@ -309,8 +309,11 @@ a {
 }
 
 .work-image-wrap {
+	text-align: center;
+
 	img {
-		width: 100%;
+		width: 70%;
+  	margin-bottom: 80px;
 	}
 }
 
@@ -414,6 +417,7 @@ a {
 		  max-width: 239px;
 		  width: 90%;
 		  line-height: 25px;
+		  height: 70px;
 		  text-transform: uppercase;
 	  }
 

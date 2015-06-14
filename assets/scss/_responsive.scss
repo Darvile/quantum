@@ -106,16 +106,27 @@
 	  font-size: 5rem;
 	}
 
+	.work-image-wrap {
+		img {
+			width: 60%;
+		}
+	}
+
 	// Section features
 
 	#features {
 		.title {
 			width: 241px;
-		  // width: 365px;
 
 		  &:after {
 		  	width: 55px;
 		  }
+		}
+	}
+
+	.features-content {
+		.features-block {
+			border: 1px solid $gray-dark;
 		}
 	}
 
@@ -127,7 +138,9 @@
 	}
 
 	.job-text {
-		height: 130px;
+		height: 117px;
+		padding: 34px 20px;
+		font-size: 2.4rem;
   }
 }
 
@@ -331,8 +344,13 @@
 	}
 
 	.job-block {
-		padding: 40px;
 		font-size: 4rem;
+	}
+
+	// Section features
+
+	.job-text {
+		padding: 47px 0 82px 60px;
 	}
 
 	// Section team
