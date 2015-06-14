@@ -641,8 +641,7 @@ html[xmlns] .clearfix {
 
 @media (min-width: 768px) {
   .title {
-    width: 208px;
-    margin: 100px auto 0; }
+    width: 208px; }
     .title:after {
       content: '';
       display: block;
@@ -746,7 +745,7 @@ blockquote {
   background-color: #fff;
   overflow: hidden;
   max-width: 1437px;
-  margin: 100px auto 0;
+  margin-top: 100px;
   text-align: center; }
   .services-block-wrap > .col-md-3 {
     padding: 1px; }
@@ -952,19 +951,21 @@ blockquote {
       color: #000; }
     .features-content .features-block:hover strong {
       fill: #1ab2c7; }
-  .features-content .job-block .btn {
-    width: 100%;
-    margin-top: 40px;
-    font-size: 3rem;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 20px; }
-  .features-content .job-text {
-    border: 1px solid #DBD8DB;
-    margin-top: 40px;
-    padding: 45px;
-    text-align: center;
-    font-size: 2.6rem; }
+
+.job-block .btn {
+  width: 100%;
+  margin-top: 40px;
+  font-size: 3rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 20px; }
+
+.job-text {
+  border: 1px solid #DBD8DB;
+  margin-top: 40px;
+  padding: 45px;
+  text-align: left;
+  font-size: 2.6rem; }
 
 #team .title-wrap {
   background-color: transparent; }
@@ -979,7 +980,7 @@ blockquote {
   height: 239px;
   overflow: hidden;
   filter: grayscale(100%); }
-  .team-member:hover .team-text {
+  .team-member:hover .team-text-wrap {
     top: 0;
     opacity: 1;
     color: #FFF;
@@ -987,11 +988,10 @@ blockquote {
   .team-member img {
     width: 100%; }
 
-.team-text {
+.team-text-wrap {
   text-align: center;
   font-size: 3rem;
   background-color: rgba(0, 0, 0, 0.59);
-  padding: 98px;
   display: block;
   position: absolute;
   top: 239px;
@@ -999,7 +999,7 @@ blockquote {
   right: 0;
   bottom: 0;
   opacity: 0; }
-  .team-text span {
+  .team-text-wrap span {
     font-size: 2rem;
     color: rgba(255, 255, 255, 0.4);
     margin-top: -4px;
@@ -1064,7 +1064,7 @@ blockquote {
   padding: 0rem;
   pointer-events: auto;
   position: fixed;
-  right: 1.5em;
+  right: 2.5em;
   top: 10px;
   transition: color .4s;
   z-index: 1010; }
@@ -1259,7 +1259,7 @@ button {
    ========================================================================== */
 @media (min-width: 768px) {
   #linesWrapper {
-    height: 100vh; }
+    height: 70vh; }
 
   .triangles-wrap {
     height: 378px; }
@@ -1302,6 +1302,12 @@ button {
   #work .title {
     margin: 100px auto; }
 
+  .job-block .btn {
+    padding: 46px 10px; }
+
+  .job-text {
+    padding: 35px 20px; }
+
   .work-content {
     font-size: 2.3rem;
     width: 90%;
@@ -1322,6 +1328,9 @@ button {
   .job-text {
     height: 130px; } }
 @media (min-width: 992px) {
+  #linesWrapper {
+    height: 100vh; }
+
   .triangles-wrap {
     height: 518px; }
     .triangles-wrap canvas {
@@ -1389,12 +1398,21 @@ button {
     padding: 40px;
     font-size: 4rem; }
 
+  .job-text {
+    padding: 23px 0 23px 20px; }
+
   #team .title {
     width: 375px; }
+
+  .team-member {
+    height: 174px; }
 
   #contact .title {
     width: 232px; } }
 @media (min-width: 1100px) {
+  .services-block-wrap {
+    margin: 100px auto 0; }
+
   .box-scene {
     height: 280px; }
 
@@ -1417,6 +1435,9 @@ button {
   .job-block {
     padding: 40px;
     font-size: 4rem; }
+
+  .team-member {
+    height: 239px; }
 
   .footer {
     margin-top: 120px; } }

@@ -97,7 +97,7 @@ a {
 	background-color: #fff;
 	overflow: hidden;
 	max-width: 1437px;
-  margin: 100px auto 0;
+  margin-top: 100px;
 	text-align: center;
 
 	> .col-md-3 {
@@ -231,20 +231,6 @@ a {
   margin-right: 1px;
   margin-bottom: 1px;
   text-align: center;
-
-  // &:first-child {
-		// 	&:before {
-		//   	content: '';
-		// 	  display: block;
-		// 	  height: 30px;
-		// 	  width: 30px;
-		// 	  background-color: #FFF;
-		// 	  position: absolute;
-		// 	  left: -15px;
-		// 	  transform: rotate(45deg);
-		// 	  top: 84px;
-		//   }
-  // }
 
   &:hover {
   	background-color: #8A2BE2;
@@ -445,8 +431,9 @@ a {
 		  }
 	  }
   }
+}
 
-  .job-block {
+.job-block {
   	.btn {
   		width: 100%;
   		margin-top: 40px;
@@ -461,10 +448,9 @@ a {
   	border: 1px solid #DBD8DB;
   	margin-top: 40px;
   	padding: 45px;
-		text-align: center;
+		text-align: left;
 		font-size: 2.6rem;
   }
-}
 
 // Section team
 
@@ -490,7 +476,7 @@ a {
   filter: grayscale(100%);
 
   &:hover {
-  	.team-text {
+  	.team-text-wrap {
   		top: 0;
   		opacity: 1;
   		color: #FFF;
@@ -503,11 +489,10 @@ a {
   }
 }
 
-.team-text {
+.team-text-wrap {
   text-align: center;
   font-size: 3rem;
   background-color: rgba(0, 0, 0, 0.59);
-  padding: 98px;
   display: block;
   position: absolute;
   top: 239px;

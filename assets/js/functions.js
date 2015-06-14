@@ -8,9 +8,6 @@
 
     /**
     * Menu animation effect
-    * Description
-    * @constructor
-    * @param {type} parameter - description.
     */
 
     $('#toggle').on('click', function () {
@@ -18,6 +15,18 @@
     	$(lines).toggleClass('lines-after lines-before');
     	$('#menu').toggleClass('open');
     });
+
+    /**
+    * Change image size on window resize
+    */
+
+    $(window).resize(function () {
+    	var imgH = $('.team-member img').height();
+    	$('.team-member').each(function () {
+    		$(this).css('height', imgH);
+    		$(this).find('p').css('margin-top', (imgH - 56) / 2);
+    	});
+    }).resize();
 
     /**
     * Slick Slider
@@ -56,11 +65,6 @@
 		  	}
 		}
 	  ]
-	});
-
-	$('#rotatescroll').tinycircleslider({
-		interval: true,
-		dotsSnap: true
 	});
 
 

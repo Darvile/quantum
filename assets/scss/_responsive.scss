@@ -17,7 +17,7 @@
 	// Section linesWrapper
 
   #linesWrapper {
-  	height: 100vh;
+  	height: 70vh;
 	}
 
 	.triangles-wrap {
@@ -86,6 +86,16 @@
 		}
 	}
 
+	.job-block {
+		.btn {
+			padding: 46px 10px;
+		}
+	}
+
+	.job-text {
+		padding: 35px 20px;
+	}
+
 	.work-content {
 	  font-size: 2.3rem;
 	  width: 90%;
@@ -125,6 +135,12 @@
 // Desktop
 
 @media (min-width: $screen-md-min) {
+
+	// Section Lines
+
+	#linesWrapper {
+  	height: 100vh;
+	}
 
 	// Section comments
 
@@ -247,12 +263,20 @@
 		}
 	}
 
+	.job-text {
+		padding: 23px 0 23px 20px;
+	}
+
 	// Section Team
 
 	#team {
 		.title {
 		  width: 375px;
 		}
+	}
+
+	.team-member {
+		height: 174px;
 	}
 
 	// Section contact
@@ -270,6 +294,10 @@
 @media (min-width: $screen-lg-min) {
 
   // Section services
+	
+	.services-block-wrap {
+  	margin: 100px auto 0;
+  }
 
   .box-scene {
 	  height: 280px;
@@ -305,6 +333,12 @@
 	.job-block {
 		padding: 40px;
 		font-size: 4rem;
+	}
+
+	// Section team
+
+	.team-member {
+		height: 239px;
 	}
 
 	// Footer
