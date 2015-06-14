@@ -238,10 +238,28 @@
 		}
 	}
 
+	// Section work
+
 	.job-block {
 		.btn {
 			padding: 40px;
 			font-size: 4rem;
+		}
+	}
+
+	// Section Team
+
+	#team {
+		.title {
+		  width: 375px;
+		}
+	}
+
+	// Section contact
+
+	#contact {
+		.title {
+			width: 232px;
 		}
 	}
 }
@@ -284,5 +302,18 @@
 	  padding-left: 45px;
 	}
 
-	
+	.job-block {
+		padding: 40px;
+		font-size: 4rem;
+	}
+
+	// Footer
+
+	.footer {
+		margin-top: 120px;
+	}
+
+	.social {
+		// border-bottom: 0;
+	}
 }

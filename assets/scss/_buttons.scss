@@ -30,3 +30,16 @@ button {
   	border: 1px solid $brand-default;
   }
 }
+
+.btn.submit {
+  margin: 30px 0;
+  padding: 20px;
+  width: 100%;
+  border: 1px solid $brand-default-dark;
+  background-color: $brand-default;
+  color: #fff;
+
+  &:hover {
+    background-color: $brand-default-dark;
+  }
+}

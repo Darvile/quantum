@@ -71,7 +71,7 @@ html[xmlns] .clearfix {
     bottom: 0;
     width: 66px;
     left: 44px;
-    display: block;
+    display: none;
   }
 }
 
@@ -86,7 +86,7 @@ html[xmlns] .clearfix {
   color: #FFF;
   width: 211px;
   margin: 40px auto 0;
-  margin: 100px auto 0;
+  margin: 80px auto;
   position: relative;
 
   &:after {
@@ -166,6 +166,15 @@ html[xmlns] .clearfix {
     width: 80%;
     margin: 0 auto;
     text-align: center;
+  }
+
+  // Menu active
+  .active {
+    position: relative;
+    
+    &:after {
+      display: block;
+    }
   }
 
 }
