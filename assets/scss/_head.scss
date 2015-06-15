@@ -11,7 +11,7 @@
 // Menu
 
 #toggle {
-	color: #000;
+	color: #fff;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
@@ -38,6 +38,12 @@
   user-select: none;
 }
 
+.ln-white {
+	&:before, &:after {
+		background-color: #000 !important;
+	}
+}
+
 .lines {
 	display: inline-block;
   height: 4px;
@@ -46,7 +52,7 @@
   width: 45px;
 
   &:before, &:after {
-  	background: #000;
+  	background-color: rgba(255, 255, 255, 0.79);
   	content: '';
 	  display: inline-block;
 	  height: 4px;
@@ -113,7 +119,6 @@
 			width: 100%;
 
 			&:hover {
-				// background-color: #fff;
 				background-color: rgba(255, 255, 255, 0.15);
 				color: $brand-default;
 			}
@@ -133,10 +138,10 @@
 }
 
 .main-title {
-	  margin: 164px 0 0;
-	 	font-size: 4.8rem;
-	  font-weight: 700;
-  }
+ 	font-size: 4.8rem;
+  font-weight: 700;
+  margin: 0;
+}
 
 .main-subtitle {
 	color: rgba(255, 255, 255, 0.6);
@@ -149,16 +154,17 @@
 
 .main-sub-subtitle {
 	display: block;
-  margin-top: 40px;
   font-size: 3rem;
   width: 520px;
-  margin: 40px auto;
   color: rgba(131, 129, 129, 0.81);
   text-transform: none;
+  font-size: 2rem;
+  margin: 40px auto;
+  font-size: 1.8rem;
+  width: 310px;
 }
 
 #canvas {
-	// margin-top: 200px;
 	width: 80%;
   height: auto;
 }
@@ -188,27 +194,18 @@
 
 	// Top Header
 
-	// .top-header {
-	// 	max-height: 903px;
-	// }
+	.main-title {
+		font-size: 10.8rem;
+	}
 
-	// .main-title {
-	// 	font-size: 13.5rem;
-	// 	margin: 294px 0 0;
-	// }
+	.main-subtitle {
+		font-size: 6.5rem;
+	}
 
- //  .main-subtitle {
- //  	font-size: 7.5rem;
- //  	line-height: 27px;
-	// }
-
-	// // Section Services
-
-	// .title {
-	//   font-size: 5rem;
-	//   width: 266px;
-	//   margin: 59px auto 0;
-	// }
+	.main-sub-subtitle {
+		font-size: 2.8rem;
+  	width: 500px;
+	}
 }
 
 
@@ -234,11 +231,11 @@
 
 .main-title {
 	font-size: 17.5rem;
-  margin: 206px 0 0;
 }
 
 .main-subtitle {
   	font-size: 11.1rem;
+  	margin-bottom: 57px;
   }
 }
 
@@ -246,7 +243,5 @@
 // Desktop - Large monitors
 
 @media (min-width: $screen-lg-min) {
-  #canvas {
-		width: 1036px;
-	}
+ 
 }

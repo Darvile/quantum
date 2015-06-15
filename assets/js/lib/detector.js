@@ -36,6 +36,9 @@ var Detector = {
 
 		}
 
+		$('.main-title').css('color', '#000');
+		$('.top-header').css('background-color', '#1ab2c7');
+
 		return element;
 
 	},

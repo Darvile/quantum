@@ -82,8 +82,8 @@ if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 				// container.appendChild( stats.domElement );
 
 				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-				document.addEventListener( 'touchstart', onDocumentTouchStart, false );
-				document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+				// document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+				// document.addEventListener( 'touchmove', onDocumentTouchMove, false );
 
 				//
 
@@ -110,31 +110,31 @@ if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
 			}
 
-			function onDocumentTouchStart( event ) {
+			// function onDocumentTouchStart( event ) {
 
-				if ( event.touches.length === 1 ) {
+			// 	if ( event.touches.length === 1 ) {
 
-					event.preventDefault();
+			// 		event.preventDefault();
 
-					mouseX = event.touches[ 0 ].pageX - windowHalfX;
-					mouseY = event.touches[ 0 ].pageY - windowHalfY;
+			// 		mouseX = event.touches[ 0 ].pageX - windowHalfX;
+			// 		mouseY = event.touches[ 0 ].pageY - windowHalfY;
 
-				}
+			// 	}
 
-			}
+			// }
 
-			function onDocumentTouchMove( event ) {
+			// function onDocumentTouchMove( event ) {
 
-				if ( event.touches.length === 1 ) {
+			// 	if ( event.touches.length === 1 ) {
 
-					event.preventDefault();
+			// 		event.preventDefault();
 
-					mouseX = event.touches[ 0 ].pageX - windowHalfX;
-					mouseY = event.touches[ 0 ].pageY - windowHalfY;
+			// 		mouseX = event.touches[ 0 ].pageX - windowHalfX;
+			// 		mouseY = event.touches[ 0 ].pageY - windowHalfY;
 
-				}
+			// 	}
 
-			}
+			// }
 
 			function animate() {
 

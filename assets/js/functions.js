@@ -2,9 +2,6 @@
 	$(window).load(function () {
 	    /**
 	    * Apps main code documentation
-	    * Description
-	    * @constructor
-	    * @param {type} parameter - description.
 	    */
 
 	    /**
@@ -16,6 +13,47 @@
 	    	$(lines).toggleClass('lines-after lines-before');
 	    	$('#menu').toggleClass('open');
 	    });
+
+	    $(document).on('click', '[data-menu]', function(e){
+            e.stopPropagation();
+            e.preventDefault();
+
+            // Close menu
+            $('.open').removeClass();
+            $('#menu').removeClass('open');
+            $('body').find('.lines').removeClass('lines-after lines-before');
+
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+
+            var target = $(this).attr('data-menu');
+            var elWrapped = $('[data-target="' + target + '"]');
+
+			scrollToDiv(elWrapped,40);
+			
+			return false;
+        });
+
+        function scrollToDiv(element, navheight){
+			var offset = element.offset();
+			var offsetTop = offset.top;
+			var totalScroll = offsetTop;
+			
+			$('body, html').animate({
+					scrollTop: totalScroll
+			}, 500);
+		}
+
+		$('a').click(function(){
+	
+		var el = $(this).attr('href');
+		var elWrapped = $(el);
+		
+		scrollToDiv(elWrapped,40);
+		
+		return false;
+	
+	});
 
 	    /**
 	    * Change image size on window resize
@@ -74,14 +112,17 @@
 		  ]
 		});
 
+	    /**
+	    * Changes the menu toggle color
+	    */
 
 		$(window).on('scroll', function () {
-			// var top = $(this).scrollTop();
-			// if(top >= 6000) {
-			// 	$('#team .title-wrap').css('position', 'fixed');
-			// } else {
-			// 	$('#team .title-wrap').css('position', 'initial');
-			// }
+			var top = $(this).scrollTop();
+			if(top >= 717) {
+				$('.lines').addClass('ln-white');
+			} else {
+				$('.lines').removeClass('ln-white');
+			}
 		});
 	});
 

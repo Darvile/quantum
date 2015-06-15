@@ -28,6 +28,7 @@ canvas {
 	position: absolute;
   top: 0;
   z-index: -1;
+  background-color: $brand-default;
 }
 
 * {
@@ -292,18 +293,6 @@ canvas {
   padding: 10px;
   color: #FFF;
   letter-spacing: 0.1em;
-
-  // &:before {
-		//   	content: '';
-		// 	  display: block;
-		// 	  height: 30px;
-		// 	  width: 30px;
-		// 	  background-color: #FFF;
-		// 	  position: absolute;
-		// 	  left: 50%;
-		// 	  transform: rotate(45deg);
-		// 	  top: 84px;
-		//   }
 }
 
 .clients-logo-wrap {
@@ -417,6 +406,8 @@ canvas {
 // Section team
 
 #team {
+	overflow: hidden;
+	
 	.title-wrap {
 		background-color: rgba(0, 0, 0, 0);
 	}
