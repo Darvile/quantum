@@ -305,11 +305,30 @@
 
   // Section comments
 
+	// .quote-wrapper {
+	//   margin-top: 298px;
+	// }
+
 	.quote-wrapper {
-	  margin-top: 298px;
+	  margin-top: 338px;
+	}
+
+	// Section values
+
+	#values .title {
+	  width: 296px;
+	}
+
+	#values .title:after {
+	  width: 106px;
 	}
 
 	// Section work
+
+	#work .title {
+	  margin: 50px auto;
+	  width: 244px;
+	}
 
 	.work-content {
 		max-width: 640px;
@@ -323,14 +342,36 @@
 
 	// Section features
 
+	#features .title {
+	  width: 584px;
+
+	  &:after {
+	  	width: 125px;
+	  }
+	}
+
 	.job-text {
 		padding: 47px 0 82px 60px;
 	}
 
 	// Section team
 
+	#team .title {
+  	width: 604px;
+
+	  &:after {
+	  	width: 113px;
+	  }
+	}
+
 	.team-member {
 		height: 239px;
+	}
+
+	// Section contact
+
+	#contact .title:after {
+	  width: 108px;
 	}
 
 	// Footer

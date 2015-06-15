@@ -183,12 +183,28 @@ html[xmlns] .clearfix {
 
 @media (min-width: $screen-lg-min) {
 
+  .main-title {
+    font-size: 22.5rem;
+  }
+
+  .main-text {
+    font-size: 2.6rem;
+    width: 76%;
+  }
+
   .title {
+    font-size: 8rem;
+    width: 508px; 
+
     &:after {
       height: 6px;
       width: 100px;
       left: 0;
     }
+  }
+
+  #contact .title {
+    width: 382px;
   }
 }
 
