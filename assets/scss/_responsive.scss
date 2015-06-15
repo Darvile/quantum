@@ -31,8 +31,6 @@
 
 		blockquote {
 			font-size: 3.1rem;
-			width: 90%;
-			margin: 0 auto;
 
 			p {
 				margin-left: 55px;
@@ -191,7 +189,7 @@
 		height: 250px;
 
 		svg {
-  		// width: 130px;
+  		width: 113px;
   		margin-top: 51px;
   	}
 
@@ -270,7 +268,7 @@
 
 	#contact {
 		.title {
-			width: 232px;
+			width: 372px;
 		}
 	}
 }
@@ -305,10 +303,6 @@
 
   // Section comments
 
-	// .quote-wrapper {
-	//   margin-top: 298px;
-	// }
-
 	.quote-wrapper {
 	  margin-top: 338px;
 	}
@@ -328,6 +322,10 @@
 	#work .title {
 	  margin: 50px auto;
 	  width: 244px;
+
+	  &:after {
+	  	width: 82px;
+	  }
 	}
 
 	.work-content {
@@ -377,7 +375,7 @@
 	// Footer
 
 	.footer {
-		margin-top: 120px;
+		padding-top: 120px;
 	}
 
 	.social {

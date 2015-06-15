@@ -244,11 +244,17 @@
 // Desktop - Large monitors
 
 @media (min-width: $screen-lg-min) {
+
+}
+
+// Desktop - Super Large monitors
+
+@media (min-width: 1600px) {
 	.menu-list {
 	  margin-top: 90px;
 	}
 
 	.menu-list .menu-item a {
 	  padding: 20px 40px;
-	}
+	}  
 }
