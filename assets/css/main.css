@@ -696,16 +696,18 @@ a {
   text-decoration: none; }
 
 canvas {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: -1;
   background-color: #1ab2c7; }
 
 * {
-  transition: 0.2s; }
+  transition: 0.2s;
+  position: relative; }
 
 #services {
-  display: inline-block; }
+  display: inline-block;
+  background-color: #fff; }
   #services .title {
     color: #000; }
 
@@ -775,6 +777,9 @@ canvas {
   font-size: 2.5rem;
   text-transform: uppercase; }
 
+#comments {
+  background-color: #fff; }
+
 .tablet-container {
   height: 100%;
   margin-top: 60px;
@@ -816,8 +821,6 @@ canvas {
       margin-top: 0; }
     .square:hover span {
       display: block; }
-  .square svg {
-    width: 90px; }
   .square path, .square ellipse, .square polygon {
     fill: #0B5B66; }
   .square span {
@@ -826,13 +829,15 @@ canvas {
     margin-top: -22px;
     display: none; }
 
-#work .title {
-  margin: 50px auto;
-  width: 94px; }
-  #work .title:after {
-    width: 45px; }
-#work .btn {
-  margin-top: 49px; }
+#work {
+  background-color: #fff; }
+  #work .title {
+    margin: 50px auto;
+    width: 94px; }
+    #work .title:after {
+      width: 45px; }
+  #work .btn {
+    margin-top: 49px; }
 
 .title-wrap {
   background-color: #201F1F;
@@ -862,9 +867,11 @@ canvas {
     width: 70%;
     margin-bottom: 80px; }
 
-#clients .title {
-  margin: 100px auto;
-  width: 193px; }
+#clients {
+  background-color: #fff; }
+  #clients .title {
+    margin: 100px auto;
+    width: 193px; }
 
 .minor-title {
   font-size: 2rem;
@@ -892,15 +899,17 @@ canvas {
   width: 60%;
   margin: 0 auto; }
 
-#features .title-wrap {
-  color: #000;
-  border-top: 1px dotted #dbd8db;
-  margin-bottom: 60px; }
-#features .title {
-  width: 245px;
-  margin: 100px auto; }
-  #features .title:after {
-    width: 55px; }
+#features {
+  background-color: #fff; }
+  #features .title-wrap {
+    color: #000;
+    border-top: 1px dotted #dbd8db;
+    margin-bottom: 60px; }
+  #features .title {
+    width: 245px;
+    margin: 100px auto; }
+    #features .title:after {
+      width: 55px; }
 
 .features-content {
   margin-top: -15px;
@@ -945,7 +954,8 @@ canvas {
   font-size: 2.6rem; }
 
 #team {
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #fff; }
   #team .title-wrap {
     background-color: transparent; }
   #team .title {
@@ -984,16 +994,19 @@ canvas {
     margin-top: -4px;
     display: block; }
 
-#contact .title {
-  width: 152px; }
-  #contact .title:after {
-    width: 48px; }
+#contact {
+  background-color: #fff; }
+  #contact .title {
+    width: 152px; }
+    #contact .title:after {
+      width: 48px; }
 
 .contact-form {
   margin-top: 80px; }
 
 .footer {
-  margin-top: 10px; }
+  margin-top: 10px;
+  background-color: #fff; }
 
 .social-wrap a {
   color: #6B6B6B; }
@@ -1007,7 +1020,8 @@ canvas {
   padding: 40px 0 20px;
   text-align: center;
   border: 1px dotted #6B6B6B;
-  border-bottom: 0; }
+  border-bottom: 0;
+  background-color: #fff; }
   .social:first-child {
     border-left: 0; }
   .social:hover .icon-twitter {
@@ -1134,7 +1148,8 @@ canvas {
 .main-title {
   font-size: 4.8rem;
   font-weight: 700;
-  margin: 0; }
+  margin: 0;
+  position: relative; }
 
 .main-subtitle {
   color: rgba(255, 255, 255, 0.6);
@@ -1358,7 +1373,6 @@ button {
   .square {
     height: 250px; }
     .square svg {
-      width: 130px;
       margin-top: 51px; }
     .square span {
       margin-top: 0; }
@@ -1415,7 +1429,7 @@ button {
       text-align: center; }
 
   .quote-wrapper {
-    margin-top: 216px; }
+    margin-top: 298px; }
 
   .work-content {
     max-width: 640px;

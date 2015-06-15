@@ -25,20 +25,23 @@ a {
 }
 
 canvas {
-	position: absolute;
-  top: 0;
-  z-index: -1;
-  background-color: $brand-default;
+	// position: absolute;
+	position: fixed;
+	top: 0;
+	z-index: -1;
+	background-color: $brand-default;
 }
 
 * {
 	transition: 0.2s;
+	position: relative;
 }
 
 // Section Services
 
 #services {
   display: inline-block;
+  background-color: #fff;
 
   .title {
   	color: #000;
@@ -140,7 +143,7 @@ canvas {
 // Section comments 
 
 #comments {
-	
+	background-color: #fff;
 }
 
 .tablet-container {
@@ -208,7 +211,7 @@ canvas {
   }
   
 	svg {
-		width: 90px;
+		// width: 90px;
 	}
 
   path, ellipse, polygon {
@@ -226,6 +229,8 @@ canvas {
 // Section work
 
 #work {
+	background-color: #fff;
+
 	.title {
 		margin: 50px auto;
 		width: 94px;
@@ -279,6 +284,8 @@ canvas {
 // Section clients
 
 #clients {
+	background-color: #fff;
+
 	.title {
 		margin: 100px auto;
   	width: 193px;
@@ -320,6 +327,8 @@ canvas {
 // Section features
 
 #features {
+	background-color: #fff;
+
 	.title-wrap {
   	color: #000;
   	border-top: 1px dotted $gray-dark;
@@ -407,6 +416,7 @@ canvas {
 
 #team {
 	overflow: hidden;
+	background-color: #fff;
 	
 	.title-wrap {
 		background-color: rgba(0, 0, 0, 0);
@@ -465,6 +475,8 @@ canvas {
 // Section contact
 
 #contact {
+	background-color: #fff;
+
 	.title {
 		width: 152px;
 
@@ -482,6 +494,7 @@ canvas {
 
 .footer {
 	margin-top: 10px;
+	background-color: #fff;
 }
 
 .social-wrap {
@@ -506,6 +519,7 @@ canvas {
 	text-align: center;
 	border: 1px dotted $text-color;
 	border-bottom: 0;
+	background-color: #fff;
 
 	&:first-child {
 		border-left: 0;

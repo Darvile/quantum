@@ -80,6 +80,8 @@ module.exports = function( grunt ) {
 						'assets/js/lib/jquery.slickSlider.js',
 						'assets/js/lib/detector.js',
 						'assets/js/lib/particles.sprite.js',
+						'assets/js/lib/snap.js',
+						'assets/js/lib/skrollr.js',
 						'assets/js/functions.js'
 					]
 				}
