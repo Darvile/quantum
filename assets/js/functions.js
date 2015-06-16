@@ -1,8 +1,5 @@
 (function($) {
 	$(window).load(function () {
-	    /**
-	    * Apps main code documentation
-	    */
 
 	    /**
 	    * Menu animation effect
