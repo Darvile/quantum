@@ -715,8 +715,7 @@ canvas {
   background-color: #1ab2c7; }
 
 * {
-  transition: 0.2s;
-  position: relative; }
+  transition: 0.2s; }
 
 #services {
   display: inline-block;
