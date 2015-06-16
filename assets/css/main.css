@@ -548,9 +548,6 @@ th {
   height: auto;
   border: 1px solid transparent; }
 
-.full-width {
-  width: 100%; }
-
 .fl-left {
   float: left; }
 
@@ -686,7 +683,7 @@ html[xmlns] .clearfix {
 
   .title {
     font-size: 8rem;
-    width: 508px; }
+    width: 510px; }
     .title:after {
       height: 6px;
       width: 100px;
@@ -715,7 +712,8 @@ canvas {
   background-color: #1ab2c7; }
 
 * {
-  transition: 0.2s; }
+  transition: 0.2s;
+  position: relative; }
 
 #services {
   display: inline-block;
@@ -1438,7 +1436,7 @@ button {
     height: 174px; }
 
   #contact .title {
-    width: 372px; } }
+    width: 394px; } }
 @media (min-width: 1100px) {
   .services-block-wrap {
     margin: 100px auto 0; }
@@ -1478,7 +1476,7 @@ button {
     font-size: 4rem; }
 
   #features .title {
-    width: 584px; }
+    width: 592px; }
     #features .title:after {
       width: 125px; }
 
@@ -1486,7 +1484,7 @@ button {
     padding: 47px 0 82px 60px; }
 
   #team .title {
-    width: 604px; }
+    width: 620px; }
     #team .title:after {
       width: 113px; }
 

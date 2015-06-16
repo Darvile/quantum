@@ -34,7 +34,12 @@
 			return false;
         });
 
-        function scrollToDiv(element, navheight){
+        /**
+	    * Smooth scrolling.
+	    * @param element {string} - Jquery elemento to scroll to.
+	    */
+
+        function scrollToDiv(element){
 			var offset = element.offset();
 			var offsetTop = offset.top;
 			var totalScroll = offsetTop;
