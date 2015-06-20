@@ -1,6 +1,6 @@
-# Cheesecake Landing Page Project
+# Quantum Landing Page Project
 
-This a project for the landing page of Cheesecake Labs website.
+This a project for the landing page of Quantum website.
 
 
 
