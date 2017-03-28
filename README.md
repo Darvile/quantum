@@ -10,7 +10,7 @@ This project contains experimental WebGL features, so make sure you test it in a
 
 If you are viewing this from a mobile device and you don't see particles but instead a blue background on the top header, that means your device does not support WebGL, you will probably get an error message at the footer.
 
-You should run this app on a localhost/web server environment so you won't get cross domain issues. If you have any trouble running the app you can checkout the [live demo](http://www.danieldarvile.com.br/quantum/index.html).
+You should run this app on a localhost/web server environment so you won't get cross domain issues. If you have any trouble running the app you can checkout the [live demo](https://darvile.herokuapp.com/quantum/index.html).
 
 Please see the instruction below to set up the environment.
 
